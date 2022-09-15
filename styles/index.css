@@ -1,0 +1,50 @@
+body {
+    margin: 7.5vh auto;
+    width: 45vw;
+    font-size: 115%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+/*---------------------------------------HEADER---------------------------------------*/
+header {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: auto;
+    margin-bottom: 1.5em;
+}
+
+#photo {
+
+    grid-column: 1;
+    grid-row: 1 / 3;
+    max-width: 90%;
+    height: auto;
+    border-style: double;
+    border-width: 4px;
+}
+
+#title {
+    margin: auto;
+    grid-column: 2 / 4;
+    grid-row: 1 / 2 ;
+}
+
+#subtitle {
+    margin: auto;
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
+}
+/*------------------------------------------------------------------------------------*/
+
+
+/*---------------------------------------MAIN---------------------------------------*/
+
+ul {
+    list-style-type: circle;
+}
+
+li {
+    margin: 5px auto;
+}
+/*----------------------------------------------------------------------------------*/
