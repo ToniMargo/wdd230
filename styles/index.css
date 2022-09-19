@@ -1,8 +1,11 @@
 body {
     margin: 7.5vh auto;
-    width: 700px;
-    font-size: 115%;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    width: 475px;
+    font-family: 'Nunito', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Oswald', sans-serif;
 }
 
 /*---------------------------------------HEADER---------------------------------------*/
@@ -44,6 +47,19 @@ ul {
 }
 
 li {
-    margin: 5px auto;
+    margin: 7px auto;
+}
+/*----------------------------------------------------------------------------------*/
+
+
+
+/*---------------------------------------FOOTER-------------------------------------*/
+
+footer p {
+    text-align: center;
+}
+
+#lastmod {
+    color: darkblue;
 }
 /*----------------------------------------------------------------------------------*/
