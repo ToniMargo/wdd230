@@ -1,0 +1,58 @@
+@media only screen and (min-width: 32.5em) {
+    body {
+        margin: 7.5vh auto;
+        width: 475px;
+        font-size: 100%;
+    }
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    /*---------------------------------------HEADER---------------------------------------*/
+    header {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: auto;
+        margin-bottom: 1.5em;
+    }
+
+    #photo {
+        grid-column: 1;
+        grid-row: 1 / 3;
+        max-width: 90%;
+        height: auto;
+        border-style: double;
+        border-width: 4px;
+    }
+
+    #title {
+        margin: auto;
+        grid-column: 2 / 4;
+        grid-row: 1 / 2 ;
+    }
+
+    #subtitle {
+        margin: auto;
+        grid-column: 2 / 4;
+        grid-row: 2 / 3;
+    }
+    /*------------------------------------------------------------------------------------*/
+
+    /*---------------------------------------FOOTER-------------------------------------*/
+
+    footer p {
+        text-align: center;
+        font-size: 1em;
+        margin-bottom: 0;
+    }
+
+    #lastmod {
+        color: darkblue;
+        font-size: 1em;
+    }
+    /*----------------------------------------------------------------------------------*/
+}
