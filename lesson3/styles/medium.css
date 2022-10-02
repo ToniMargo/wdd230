@@ -1,0 +1,79 @@
+@media only screen and (min-width: 32.5em) {
+    body {
+        margin: 3vh auto;
+        width: 475px;
+        font-size: 100%;
+    }
+    h1 {
+        font-size: 3em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    h3 {
+        text-align: center;
+        margin: 0.5em auto 0.5em;
+        font-size: 2em;
+    }
+
+    /*---------------------------------------HEADER---------------------------------------*/
+    header {
+        margin-bottom: 1.5em;
+    }
+    
+    #title {
+        text-align: center;
+    }
+    
+    #subtitle {
+        text-align: center;
+    }
+
+
+    /*------------------------------------------NAV---------------------------------------*/
+
+    nav {
+		flex-direction: row;
+	}
+	
+	nav a {
+		font-size: 1.1rem;
+	}
+
+    /*------------------------------------------------------------------------------------*/
+
+    /*---------------------------------------MAIN---------------------------------------*/
+    main {
+        width: 100%;
+        margin: auto;
+        text-align: center;
+    }
+    
+    .persona {
+        display: block;
+        width: 475px;
+    }
+    .personamob {
+        display: none;
+    }
+    #scenarios {
+        margin-bottom: 6em;
+    }
+    /*----------------------------------------------------------------------------------*/
+
+    /*---------------------------------------FOOTER-------------------------------------*/
+
+    footer p {
+        text-align: center;
+        font-size: 1em;
+        margin-bottom: 0;
+    }
+
+    #lastmod {
+        color: darkblue;
+        font-size: 1em;
+    }
+    /*----------------------------------------------------------------------------------*/
+}

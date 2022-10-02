@@ -1,0 +1,76 @@
+@media only screen and (min-width: 1200px) {
+    body {
+        margin: 3vh auto;
+        width: 1200px;
+        font-size: 100%;
+    }
+    h1 {
+        font-size: 3em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    h3 {
+        text-align: center;
+        margin: 1.5em auto 0.5em;
+        font-size: 2em;
+    }
+
+    /*---------------------------------------HEADER---------------------------------------*/
+    header {
+        margin-bottom: 1.5em;
+    }
+    
+    #title {
+        text-align: center;
+    }
+    
+    #subtitle {
+        text-align: center;
+    }
+    
+    
+    /*---------------------------------------NAV---------------------------------------*/
+
+    nav a {
+        margin-top: 1em;
+		font-size: 1.3rem;
+	}
+    /*------------------------------------------------------------------------------------*/
+
+    /*---------------------------------------MAIN---------------------------------------*/
+    main {
+        width: 600px;
+        margin: auto;
+        text-align: center;
+    }
+
+    .persona {
+        display: block;
+        width: 600px;
+    }
+    .personamob {
+        display: none;
+    }
+    #scenarios {
+        margin-bottom: 6em;
+    }
+
+    /*----------------------------------------------------------------------------------*/
+
+    /*---------------------------------------FOOTER-------------------------------------*/
+
+    footer p {
+        text-align: center;
+        font-size: 1em;
+        margin-bottom: 0;
+    }
+
+    #lastmod {
+        color: darkblue;
+        font-size: 1em;
+    }
+    /*----------------------------------------------------------------------------------*/
+}

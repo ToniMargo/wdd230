@@ -1,0 +1,126 @@
+body {
+    margin: 3vh auto;
+    width: 250px;
+    font-family: 'Nunito', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Oswald', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+h2 {
+    font-size: 1em;
+}
+
+/*---------------------------------------HEADER---------------------------------------*/
+header {
+    margin-bottom: 1.5em;
+}
+
+#title {
+    text-align: center;
+}
+
+#subtitle {
+    text-align: center;
+}
+
+/*------------------------------------------NAV---------------------------------------*/
+nav {
+	text-align: center;
+}
+
+nav {
+	display: flex;
+	flex-direction: column;
+}
+
+nav div {
+	flex: 1 1 auto;
+}
+
+nav a {
+	display: block;
+	color: #000000;
+	text-align: center;
+	padding: 15px;
+	text-decoration: none;
+	font-size: 0.9rem;
+}
+
+nav a:hover {
+	background-color: #7a7a7a;
+	color: #ffffff;
+}
+
+/*------------------------------------------------------------------------------------*/
+
+/*---------------------------------------MAIN---------------------------------------*/
+
+
+main {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.persona {
+    display: none;
+}
+.personamob {
+    display: block;
+    width: 250px;
+}
+#scenarios {
+    margin-bottom: 6em;
+}
+
+#site-logo {
+    width: 200px;
+}
+
+
+
+/*-----------------------------------TABLE------------------------------------------*/
+
+.tg  {border-collapse:collapse;border-spacing:0;margin-bottom: 5em}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+          overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+          font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-x5q1{font-size:16px;text-align:left;vertical-align:top;font-family: 'Josefin Sans',sans-serif;}
+.tg .tg-qncv{font-size:64px;text-align:left;vertical-align:top;font-family: 'Josefin Sans', sans-serif;font-weight: 700;color: #D8E279;}
+.tg .tg-qncw{font-size:32px;text-align:left;vertical-align:top;font-family: 'Josefin Sans', sans-serif;font-weight: 300;}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+.tg .tg-60hs{font-size:20px;text-align:left;vertical-align:top;font-family: 'Josefin Sans', sans-serif;font-weight: 700;background-color: #D8E279;}
+.tg .tg-60hu{font-size:20px;text-align:left;vertical-align:top;font-family: 'Josefin Sans', sans-serif;font-weight: 700;color:#FFCC00;}
+.tg .tg-60ht{font-size:42px;text-align:left;vertical-align:top;font-family: 'Josefin Sans', sans-serif;background-color: #C5EDB6;}
+.tg .tg-84g4{font-size:24px;text-align:left;vertical-align:top;font-family: 'Josefin Sans', sans-serif;}
+.tg .tg-nx8p{font-size:18px;text-align:left;vertical-align:top;font-family: 'Josefin Sans', sans-serif;font-weight: 700;color: #7a7a7a}
+/*----------------------------------------------------------------------------------*/
+
+
+
+
+/*----------------------------------------------------------------------------------*/
+
+
+
+/*---------------------------------------FOOTER-------------------------------------*/
+
+footer p {
+    text-align: center;
+    font-size: 0.8em;
+    margin-bottom: -0.8vh;
+}
+
+#lastmod {
+    color: darkblue;
+    font-size: 0.8em;
+}
+/*----------------------------------------------------------------------------------*/
