@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Chacha Chamber Of Commerce</title>
+
+  <meta name="description" content="Website for the Chacha Chamber of Commerce">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;400;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/medium.css">
+  <link rel="stylesheet" href="styles/large.css">
+</head>
+<body>
+    <!--HEADER HERE-->
+    <header>
+        <img class="siteLogo" src="images/logo-color.png" alt="logo of chachachamber.com">
+        <h1 class="title">Chacha Chamber of Commerce</h1>
+        <h2 class="subtitle">Helping Chacha, one business at the time</h2>
+        <h3 class="todayDate"></h3>
+    </header>
+
+    <!--NAV HERE-->
+    <nav>
+        <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+        <ul id="primaryNav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Discover</a></li>
+            <li><a href="#">Directory</a></li>
+            <li><a href="#">Join</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="facebook.com" id="facebook"><img src="images/icons8-facebook-50.png" alt="facebook page link"></a></li>
+            <li><a href="twitter.com" id="twitter"><img src="images/icons8-twitter-50.png" alt="twitter page link"></a></li>
+        </ul>
+    </nav>
+
+    
+
+    <!--CONTENT HERE-->
+    <main>
+      <div class="card" id="news">news</div>
+      <div class="card" id="hero">hero</div>
+      <div class="card" id="spotlight1">spotlight1</div>
+      <div class="card" id="spotlight2">spotlight2</div>
+      <div class="card" id="spotlight3">spotlight3</div>
+      <div class="card" id="join">join</div>
+      <div class="card" id="event">event</div>
+      <div class="card" id="weather">weather</div>
+    </main>
+
+    <!--FOOTER HERE-->
+    <footer>
+        <img class="siteLogo" src="images/logo-color.png" alt="logo of chachachamber.com">
+        <h1 class="title">Chacha Chamber of Commerce</h1>
+        <p id="address">10 Salsa St. Chacha TX 78888</p>
+        <p id="email">info@chachachamber.org</p>
+        <p id="phone">+(123) 456-7890</p>
+        <p id="location"><a href="https://www.google.com/maps/">📍 Location</a></p>
+        <p id="foot">&copy; <span id="date1"></span> Chacha Chamber | Antonio Martinez | WDD 230 Project | <span id="lastmod"></span></p>
+    </footer>
+
+    <script src="scripts/scripts.js"></script>
+</body>
+</html>

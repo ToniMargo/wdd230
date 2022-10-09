@@ -1,0 +1,138 @@
+/*---------------------------------------GLOBAL---------------------------------------*/
+body {
+    font-family: 'Josefin Sans',sans-serif;
+    margin: auto;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: 300;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+/*---------------------------------------HEADER---------------------------------------*/
+header {
+    display: block;
+    background-color: rgba(216, 226, 121, 0.05);
+    padding: 2rem;
+    margin-bottom: 0;
+}
+
+h1.title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #D8E279;
+    margin-bottom: 0;
+}
+
+h2.subtitle {
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+img.siteLogo {
+    width: 150px;
+}
+
+/*------------------------------------------NAV---------------------------------------*/
+
+
+#facebook img, #twitter img {
+    width: 1rem;
+}
+nav button {
+    margin: .2rem 2vw;
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    color: #000;
+}
+nav {
+    margin-top: 0;
+    margin-bottom: 3vh;
+    background-color: rgba(216, 226, 121, 0.5);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    text-align: center;
+    padding: .8rem 2vw;
+    display: block;
+    text-decoration: none;
+    color: #333;
+    border-top: 1px solid #D8E279;
+}
+
+nav ul li a:hover {
+    background-color: rgba(197, 237, 182, 0.3);
+}
+
+nav ul li.active a {
+    background-color: rgba(197, 237, 182, 0.2);
+    font-weight: 700;
+    color: #000;
+}
+
+nav ul {display:none;}
+nav ul.open {display: block;}
+
+#hamburgerBtn span:nth-child(1) {display: block;}
+#hamburgerBtn span:nth-child(2) {display: none;}
+
+#hamburgerBtn.open span:nth-child(1) {display: none;}
+#hamburgerBtn.open span:nth-child(2) {display: block;}
+
+
+/*---------------------------------------MAIN---------------------------------------*/
+
+main {
+    display: block;
+}
+.card {
+    min-height: 75px;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: rgba(255, 204, 0, 0.15);
+}
+div#join {
+    display: none;
+}
+div#spotlight3 {
+    display: none;
+}
+/*----------------------------------------------------------------------------------*/
+
+
+
+/*---------------------------------------FOOTER-------------------------------------*/
+footer {
+    text-align: center;
+    display: block;
+    background-color: rgba(216, 226, 121, 0.05);
+    padding: 1rem 0 0;
+}
+
+footer .siteLogo {
+    width: 100px;
+}
+p#location a {
+    text-decoration: none;
+    color: #000;
+}
+
+p#foot {
+    text-align: center;
+    background-color: #d8e279;
+    padding: 0.5rem 2rem;
+}
+
+/*----------------------------------------------------------------------------------*/
