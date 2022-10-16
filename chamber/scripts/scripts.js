@@ -26,3 +26,9 @@ const fulldateUK = new Intl.DateTimeFormat("en-UK", {
 // long, medium, short options ... try them
 
 datefieldUK.innerHTML = fulldateUK;
+
+// display meeting banner if today is Monday or Tuesday
+const meetingBanner = document.querySelector('#meetingBanner');
+if(now.getDay() == 1 || now.getDay() == 2) {
+    meetingBanner.setAttribute('class', 'visible');
+}

@@ -1,15 +1,14 @@
 @media only screen and (min-width: 35rem) {
-
+    
     /*---------------------------------------HEADER---------------------------------------*/
     header {
         display: grid;
         grid-template-columns: repeat(4, auto);
         grid-template-rows: repeat(4, auto);
         background-color: rgba(216, 226, 121, 0.05);
-        padding: 2rem;
+        padding: 2rem 0;
         margin-bottom: 0;
     }
-    
     h1.title {
         font-size: 48px;
         font-weight: 700;
@@ -28,7 +27,7 @@
     img.siteLogo {
         display: block;
         width: 200px;
-        margin: auto 2vw;
+        margin: auto;
         grid-column: 1 / 2;
         grid-row: 1 / 4;
     }
@@ -45,11 +44,12 @@
     nav ul#primaryNav {
         display: flex;
         margin-left: 2vw;
-        border-left: 1px solid rgba(0,0,0,0.3)
+        border-left: 1px solid rgba(0,0,0,0.3);
     }
 
     nav ul li a {
         border: none;
+        padding: 2vw;
         border-right: 1px solid rgba(0,0,0,0.3);
     }
 
@@ -57,17 +57,14 @@
 
     /*---------------------------------------MAIN---------------------------------------*/
     main {
-        margin: 0 3rem;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(5, 1fr);
+        grid-template-rows: repeat(5, 15rem);
         gap: 1rem;
         color: #7a7a7a;
     }
     .card {
         margin: 0;
-        min-height: 150px;
-        width: auto;
     }
     div#hero {
         grid-column: 1 / 3;

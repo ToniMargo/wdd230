@@ -1,7 +1,7 @@
 /*---------------------------------------GLOBAL---------------------------------------*/
 body {
     font-family: 'Josefin Sans',sans-serif;
-    margin: auto;
+    
 }
 
 h1 {
@@ -13,16 +13,37 @@ h2 {
     font-size: 24px;
     font-weight: 400;
 }
-
+.invisible {
+    display: none;
+}
+.visible {
+    display: block;
+}
+h3#meetingBanner {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    background-color: #D8E279;
+    padding: 0.5rem 0;
+    top: 0;
+}
 /*---------------------------------------HEADER---------------------------------------*/
 header {
+    width: 100%;
     display: block;
     background-color: rgba(216, 226, 121, 0.05);
-    padding: 2rem;
     margin-bottom: 0;
 }
 
+img.siteLogo {
+    width: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+}
 h1.title {
+    text-align: center;
     font-size: 32px;
     font-weight: 700;
     color: #D8E279;
@@ -30,12 +51,13 @@ h1.title {
 }
 
 h2.subtitle {
+    text-align: center;
     font-size: 16px;
     margin-bottom: 0;
 }
 
-img.siteLogo {
-    width: 150px;
+h3.todayDate {
+    text-align: center;
 }
 
 /*------------------------------------------NAV---------------------------------------*/
@@ -54,7 +76,7 @@ nav button {
 nav {
     margin-top: 0;
     margin-bottom: 3vh;
-    background-color: rgba(216, 226, 121, 0.5);
+    background-color: rgba(216, 226, 121, 0.2);
 }
 
 nav ul {
@@ -65,11 +87,11 @@ nav ul {
 
 nav ul li a {
     text-align: center;
-    padding: .8rem 2vw;
+    padding: .8rem 0;
     display: block;
     text-decoration: none;
     color: #333;
-    border-top: 1px solid #D8E279;
+    border-top: 1px solid white;
 }
 
 nav ul li a:hover {
@@ -96,19 +118,44 @@ nav ul.open {display: block;}
 
 main {
     display: block;
+    width: 100%;
 }
 .card {
-    min-height: 75px;
-    margin: 1rem;
-    padding: 1rem;
-    background-color: rgba(255, 204, 0, 0.15);
+    width: 100%;
+    margin: 1rem 0;
+    background-color: #333;
+    position: relative;
 }
+.card img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: .5s ease;
+}
+.card h2 {
+    color: #fff;
+    position: absolute;
+    top: 25px;
+	left: 50px;
+    transition: .5s ease;
+    opacity: 0;
+}
+.card:hover img {
+    opacity: 0.3;
+  }
+
+.card:hover h2 {
+    opacity: 1;
+}
+
 div#join {
     display: none;
 }
 div#spotlight3 {
     display: none;
 }
+
+
 /*----------------------------------------------------------------------------------*/
 
 
@@ -132,7 +179,7 @@ p#location a {
 p#foot {
     text-align: center;
     background-color: #d8e279;
-    padding: 0.5rem 2rem;
+    padding: 0.5rem;
 }
 
 /*----------------------------------------------------------------------------------*/
