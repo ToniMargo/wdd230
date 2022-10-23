@@ -1,3 +1,5 @@
+
+
 // Display current temperature, wind speed, and wind chill from San Antonio TX weather section, since Chacha is a fictional town. This function uses the OpenWeather API
 
 var jsonData;
