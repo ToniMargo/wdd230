@@ -123,7 +123,7 @@ main {
 .card {
     width: 100%;
     margin: 1rem 0;
-    background-color: #333;
+    /*background-color: #333;*/
     position: relative;
 }
 .card img {
@@ -132,14 +132,57 @@ main {
     object-fit: cover;
     transition: .5s ease;
 }
+
 .card h2 {
-    color: #fff;
+    color: #333;
     position: absolute;
-    top: 25px;
-	left: 50px;
+    top: 2%;
+	left: 3%;
     transition: .5s ease;
     opacity: 0;
 }
+
+/*-----------------------------*/
+/*-----------WEATHER-----------*/
+#weather section span.windSpeed {
+    color: #333;
+    position: absolute;
+    top: 14vh;
+	left: 6%;
+    transition: .5s ease;
+    opacity: 0;
+}
+#weather section span.windChill {
+    color: #333;
+    position: absolute;
+    top: 16vh;
+	left: 6%;
+    transition: .5s ease;
+    opacity: 0;
+}
+#weather:hover section span.windSpeed {
+    opacity: 1;
+}
+#weather:hover section span.windChill {
+    opacity: 1;
+}
+.temperature{
+    position: absolute;
+    top: 0%;
+	left: 3%;
+    padding: 0 0.75rem;
+    color: #fff;
+    text-shadow: -1.5px 0 black, 0 1.5px black, 1.5px 0 black, 0 -1.5px black;
+    font-size: 5rem;
+    transition: .5s ease;
+}
+#weather:hover .temperature {
+    color: darkorange;
+    text-shadow: none;
+}
+/*-----------WEATHER-----------*/
+/*-----------------------------*/
+
 .card:hover img {
     opacity: 0.3;
   }

@@ -4,23 +4,25 @@ const button = document.querySelector('button');
 
 button.addEventListener('click', () => {
     const x = input.value;
-    input.value = '';
+    if(x!=''){
+        input.value = '';
 
-    const newItem = document.createElement('li');
-    const newSpan = document.createElement('span');
-    const newButton = document.createElement('button');
+        const newItem = document.createElement('li');
+        const newSpan = document.createElement('span');
+        const newButton = document.createElement('button');
 
-    newItem.appendChild(newSpan);
-    newSpan.textContent = x;
-    newItem.appendChild(newButton);
-    newButton.textContent = '❌';
-    list.appendChild(newItem);
+        newItem.appendChild(newSpan);
+        newSpan.textContent = x;
+        newItem.appendChild(newButton);
+        newButton.textContent = '❌';
+        list.appendChild(newItem);
 
-    newButton.addEventListener('click', () => {
-        list.removeChild(newItem);
-    });
+        newButton.addEventListener('click', () => {
+            list.removeChild(newItem);
+        });
             
-    input.focus();
+        input.focus();
+    }  
 });
 
 // Get current year and put it in the footer

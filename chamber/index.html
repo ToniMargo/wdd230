@@ -18,12 +18,15 @@
   <link rel="stylesheet" href="styles/small.css">
   <link rel="stylesheet" href="styles/medium.css">
   <link rel="stylesheet" href="styles/large.css">
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+
 </head>
 <body>
     <!--HEADER HERE-->
     <h3 class="invisible" id="meetingBanner">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</h3>
     <header>
-        <img class="siteLogo" src="images/logo-color.png" alt="logo of chachachamber.com">
+        <img class="siteLogo" src="images/logo-color.webp" alt="logo of chachachamber.com">
         <h1 class="title">Chacha Chamber of Commerce</h1>
         <h2 class="subtitle">Helping Chacha, one business at the time</h2>
         <h3 class="todayDate">dateGoesHere</h3>
@@ -48,42 +51,95 @@
     <!--CONTENT HERE-->
     <main>
       <div class="card" id="news">
-        <img src="images/news.jpg" alt="pumpkin season">
+        <picture>
+          <source media="(max-width: 200px)" srcset="images/news200.jpg">
+          <source media="(max-width: 500px)" srcset="images/news500.jpg">
+          <source media="(max-width: 800px)" srcset="images/news800.jpg">
+          <source media="(max-width: 1200px)" srcset="images/news1200.jpg">
+          <img src="images/news1200.jpg" alt="pumpkin field">
+        </picture>
         <h2>NEWS: The FDA ranks Chacha as the best pumpkin producer in TX</h2>
       </div>
       <div class="card" id="hero">
-        <img src="images/hero.jpg" alt="chacha">
+        <picture>
+          <source media="(max-width: 200px)" srcset="images/hero-alt200.jpg">
+          <source media="(max-width: 500px)" srcset="images/hero-alt500.jpg">
+          <source media="(max-width: 800px)" srcset="images/hero-alt800.jpg">
+          <source media="(max-width: 1200px)" srcset="images/hero-alt1200.jpg">
+          <img src="images/hero-alt1200.jpg" alt="picture of chacha town">
+        </picture>
         <h2>Welcome to the Chacha Chamber Site</h2>
       </div>
       <div class="card" id="spotlight1">
-        <img src="images/spotlight1.jpg" alt="fungi business">
+        <picture>
+          <source media="(max-width: 200px)" srcset="images/spotlight1-200.jpg">
+          <source media="(max-width: 500px)" srcset="images/spotlight1-500.jpg">
+          <source media="(max-width: 800px)" srcset="images/spotlight1-800.jpg">
+          <source media="(max-width: 1200px)" srcset="images/spotlight1-1200.jpg">
+          <img src="images/spotlight1-1200.jpg" alt="fungis in a basket">
+        </picture>
         <h2>PsyloHealth has opened!</h2>
       </div>
       <div class="card" id="spotlight2">
-        <img src="images/spotlight2.jpg" alt="harvest insights">
-        <h2>Harvest insights</h2>
+        <picture>
+          <source media="(max-width: 200px)" srcset="images/spotlight2-200.jpg">
+          <source media="(max-width: 500px)" srcset="images/spotlight2-500.jpg">
+          <source media="(max-width: 800px)" srcset="images/spotlight2-800.jpg">
+          <source media="(max-width: 1200px)" srcset="images/spotlight2-1200.jpg">
+          <img src="images/spotlight2-1200.jpg" alt="autumn forest">
+        </picture>
+        <h2>Autumn insights</h2>
       </div>
       <div class="card" id="spotlight3">
-        <img src="images/spotlight3.jpg" alt="picture your business">
+        <picture>
+          <source media="(max-width: 200px)" srcset="images/spotlight3-200.jpg">
+          <source media="(max-width: 500px)" srcset="images/spotlight3-500.jpg">
+          <source media="(max-width: 800px)" srcset="images/spotlight3-800.jpg">
+          <source media="(max-width: 1200px)" srcset="images/spotlight3-1200.jpg">
+          <img src="images/spotlight3-1200.jpg" alt="happy old lady taking photos">
+        </picture>
         <h2>Photo your business: 10 tips</h2>
       </div>
       <div class="card" id="join">
-        <img src="images/join.jpg" alt="man using laptop">
+        <picture>
+          <source media="(max-width: 200px)" srcset="images/join200.jpg">
+          <source media="(max-width: 500px)" srcset="images/join500.jpg">
+          <source media="(max-width: 800px)" srcset="images/join800.jpg">
+          <source media="(max-width: 1200px)" srcset="images/join1200.jpg">
+          <img src="images/join1200.jpg" alt="man using laptop">
+        </picture>
         <h2>Join now!</h2>
       </div>
       <div class="card" id="event">
-        <img src="images/event1.jpg" alt="festival">
+        <picture>
+          <source media="(max-width: 200px)" srcset="images/event200.jpg">
+          <source media="(max-width: 500px)" srcset="images/event500.jpg">
+          <source media="(max-width: 800px)" srcset="images/event800.jpg">
+          <source media="(max-width: 1200px)" srcset="images/event1200.jpg">
+          <img src="images/event1200.jpg" alt="chacha festival">
+        </picture>
         <h2>UPCOMING: Chacha festival</h2>
       </div>
       <div class="card" id="weather">
-        <img src="images/weather.jpg" alt="sky">
+        <picture>
+          <source media="(max-width: 200px)" srcset="images/weather200.jpg">
+          <source media="(max-width: 500px)" srcset="images/weather500.jpg">
+          <source media="(max-width: 800px)" srcset="images/weather800.jpg">
+          <source media="(max-width: 1200px)" srcset="images/weather1200.jpg">
+          <img src="images/weather1200.jpg" alt="blue sky">
+        </picture>
         <h2>Weather insights</h2>
+        <section>
+          <h3 class="temperature">Temp goes here</h3>
+          <p><span class="windSpeed">Wind Speed goes here</span></p>
+          <p><span class="windChill">Wind Chill goes here</span></p>
+        </section>
       </div>
     </main>
 
     <!--FOOTER HERE-->
     <footer>
-        <img class="siteLogo" src="images/logo-color.png" alt="logo of chachachamber.com">
+        <img class="siteLogo" src="images/logo-color.webp" alt="logo of chachachamber.com">
         <h1 class="title">Chacha Chamber of Commerce</h1>
         <p id="address">10 Salsa St. Chacha TX 78888</p>
         <p id="email">info@chachachamber.org</p>
@@ -91,7 +147,7 @@
         <p id="location"><a href="https://www.google.com/maps/">📍 Location</a></p>
         <p id="foot">&copy; <span id="date1"></span> Chacha Chamber | Antonio Martinez | WDD 230 Project | <span id="lastmod"></span></p>
     </footer>
-
+    <script src="scripts/windchill.js"></script>
     <script src="scripts/scripts.js"></script>
 </body>
 </html>

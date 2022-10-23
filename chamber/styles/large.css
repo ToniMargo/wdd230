@@ -19,7 +19,7 @@
     main {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(3, 14rem);
+        grid-template-rows: repeat(3, 20rem);
         gap: 1rem;
     }
     div#event {

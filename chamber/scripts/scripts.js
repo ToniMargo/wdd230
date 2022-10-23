@@ -32,3 +32,4 @@ const meetingBanner = document.querySelector('#meetingBanner');
 if(now.getDay() == 1 || now.getDay() == 2) {
     meetingBanner.setAttribute('class', 'visible');
 }
+
