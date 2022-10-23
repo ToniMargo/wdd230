@@ -4,7 +4,7 @@ var jsonData;
 
 $(function () {
     
-    $.getJSON('http://api.openweathermap.org/data/2.5/weather?q=San-Antonio&APPID=d8b80212a11f7cffaca6a1ced52c249f', function(data) {
+    $.getJSON('https://api.openweathermap.org/data/2.5/weather?q=San-Antonio&APPID=d8b80212a11f7cffaca6a1ced52c249f', function(data) {
         jsonData = data;
         
         temp = (jsonData.main.temp - 273.15) * 9/5 + 32;
