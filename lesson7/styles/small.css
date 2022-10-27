@@ -1,0 +1,49 @@
+body {
+    margin: 3vh auto;
+    width: 250px;
+    font-family: 'Nunito', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Oswald', sans-serif;
+}
+
+h1 {
+    font-size: 1.5em;
+}
+
+h2 {
+    font-size: 1em;
+    text-align: center;
+}
+
+
+/*---------------------------------------HEADER---------------------------------------*/
+header {
+    display: block;
+    margin-bottom: 1.5em;
+}
+picture img[data-src] {
+    filter: blur(0.2em);
+  }
+  
+picture img {
+    filter: blur(0em);
+    transition: filter 0.8s;
+  }
+/*------------------------------------------------------------------------------------*/
+
+
+/*---------------------------------------FOOTER-------------------------------------*/
+
+footer p {
+    text-align: center;
+    font-size: 0.8em;
+    margin-bottom: -0.8vh;
+}
+
+#lastmod {
+    color: darkblue;
+    font-size: 0.8em;
+}
+/*----------------------------------------------------------------------------------*/

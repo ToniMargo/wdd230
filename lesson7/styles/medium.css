@@ -1,0 +1,48 @@
+@media only screen and (min-width: 32.5em) {
+    body {
+        margin: 7.5vh auto;
+        width: 1825px;
+        font-size: 100%;
+    }
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    /*---------------------------------------HEADER---------------------------------------*/
+    header {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(2, auto);
+        grid-gap: 5px;
+        margin-bottom: 1.5em;
+    }
+    header h1 {
+        text-align: center;
+        grid-column: 1 / 7;
+        grid-row: 1 / 2;
+    }
+
+    picture {
+        grid-row: 2/3;
+    }
+    /*------------------------------------------------------------------------------------*/
+
+
+    /*---------------------------------------FOOTER-------------------------------------*/
+
+    footer p {
+        text-align: center;
+        font-size: 1em;
+        margin-bottom: 0;
+    }
+
+    #lastmod {
+        color: darkblue;
+        font-size: 1em;
+    }
+    /*----------------------------------------------------------------------------------*/
+}
