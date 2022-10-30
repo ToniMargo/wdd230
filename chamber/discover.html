@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Discover | Chacha Chamber Of Commerce</title>
+
+  <meta name="description" content="Discover webpage for the Chacha Chamber of Commerce">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;400;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/medium.css">
+  <link rel="stylesheet" href="styles/large.css">
+
+
+</head>
+<body>
+    <!--HEADER HERE-->
+    <h3 class="invisible" id="meetingBanner">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</h3>
+    <header>
+        <img class="siteLogo" src="images/logo-color.webp" alt="logo of chachachamber.com">
+        <h1 class="title">Chacha Chamber of Commerce</h1>
+        <h2 class="subtitle">Helping Chacha, one business at the time</h2>
+        <h3 class="todayDate">dateGoesHere</h3>
+    </header>
+
+    <!--NAV HERE-->
+    <nav>
+        <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+        <ul id="primaryNav">
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="discovery.html">Discover</a></li>
+            <li><a href="#">Directory</a></li>
+            <li><a href="#">Join</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="facebook.com" id="facebook"><img src="images/icons8-facebook-50.png" alt="facebook page link"></a></li>
+            <li><a href="twitter.com" id="twitter"><img src="images/icons8-twitter-50.png" alt="twitter page link"></a></li>
+        </ul>
+    </nav>
+
+    
+
+    <!--CONTENT HERE-->
+    <main class="discover">
+        <h2>Discover</h2>
+        <h4 id="visitCounter">VisitCounter goes here</h4>
+        <div id="poblation">
+            <picture>
+                <img data-src="images/poblation1200.jpg" src="images/poblationBlur.jpg" alt="streets">
+              </picture>
+            <h3>Poblation</h3>
+            <p>As of the 2020 United States census, 67,553 people, 23,769 households, and 10,635 families were residing in the city.</p>
+        </div>
+        <div id="age-distribution">
+            <picture>
+                <img data-src="images/age-distribution1200.jpg" src="images/age-distributionBlur.jpg" alt="happy guy with glasses">
+              </picture>
+            <h3>Age Distribution</h3>
+            <p>In the city, the population was distributed as 15.4% under 18, 41.9% from 18 to 24, 24.8% from 25 to 44, 10.7% from 45 to 64, and 7.2% who were 65 or older. The median age was 23 years.</p>
+        </div>
+        <div id="proximity">
+            <picture>
+                <img data-src="images/proximity1200.jpg" src="images/proximityBlur.jpg" alt="maps">
+              </picture>
+            <h3>Proximity</h3>
+            <p>Chacha is in Central Texas. It is 30 miles (48 km) southwest of Austin and 51 miles (82 km) northeast of San Antonio.</p>
+        </div>
+        <div id="rivers">
+            <picture>
+                <img data-src="images/rivers1200.jpg" src="images/riversBlur.jpg" alt="Blanco River">
+              </picture>
+            <h3>Rivers</h3>
+            <p>The San Marcos River and the Blanco River, part of the Guadalupe watershed, flow through the city, along with Cottonwood Creek, Purgatory Creek, Sink Creek, and Willow Springs Creek.</p>
+        </div>
+        <div id="climate">
+            <picture>
+                <img data-src="images/climate1200.jpg" src="images/climateBlur.jpg" alt="field with a flock of sheeps">
+              </picture>
+            <h3>Climate</h3>
+            <p>The climate in this area is characterized by hot, humid summers and generally mild to cool winters, with some winter frost at night. Annual precipitation is about 34 inches (864 mm). According to the Köppen climate classification, Chacha has a humid subtropical climate.</p>
+        </div>
+        
+    </main>
+
+    <!--FOOTER HERE-->
+    <footer>
+        <img class="siteLogo" src="images/logo-color.webp" alt="logo of chachachamber.com">
+        <h1 class="title">Chacha Chamber of Commerce</h1>
+        <p id="address">10 Salsa St. Chacha TX 78888</p>
+        <p id="email">info@chachachamber.org</p>
+        <p id="phone">+(123) 456-7890</p>
+        <p id="location"><a href="https://www.google.com/maps/">📍 Location</a></p>
+        <p id="foot">&copy; <span id="date1"></span> Chacha Chamber | Antonio Martinez | WDD 230 Project | <span id="lastmod"></span></p>
+    </footer>
+    <script src="scripts/windchill.js"></script>
+    <script src="scripts/scripts.js"></script>
+</body>
+</html>
