@@ -253,3 +253,78 @@ main.discover img {
 /*----------------------------------------------------------------------------------*/
 /*----------------------------------------------------------------------------------*/
 /*----------------------------------------------------------------------------------*/
+
+
+/*----------------------------------------------------------------------------------*/
+/*----------------------------------JOIN.HTML----------------------------------*/
+/*----------------------------------------------------------------------------------*/
+
+main.join {
+    display: block;
+}
+main.join form {
+    background-color: rgba(255, 204, 0, 0.15);
+    margin: 0.5rem;
+    padding: 1.5rem 2rem;
+}
+main.join h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+main.join form label {
+    display: block;
+}
+main.join form input, select {
+    margin-bottom: 1rem;
+    padding: 0.25rem;
+}
+
+main.join form button {
+    display: block;
+    margin: 2rem auto 0;
+    padding: 0.35rem 2rem;
+}
+
+main.join textarea {
+    padding: 0.5rem;
+}
+
+
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:"Josefin Sans", sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:"Josefin Sans", sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-anwi{border-color:#000000;font-family:"Josefin Sans", sans-serif;font-size:14px;text-align:center;
+  vertical-align:top}
+.tg .tg-b6f3{border-color:#000000;color:#9b9b9b;font-size:12px;text-align:left;vertical-align:top}
+.tg .tg-ow2t{border-color:#000000;color:#036400;font-size:12px;text-align:left;vertical-align:top}
+.tg .tg-6845{border-color:inherit;font-family:"Josefin Sans", Helvetica, sans-serif;font-size:24px;text-align:center;
+  vertical-align:top}
+.tg .tg-lfg3{border-color:#000000;font-family:"Josefin Sans", sans-serif;font-size:18px;font-style:italic;
+  text-align:center;vertical-align:top}
+.tg .tg-wvt3{background-color:#786312;border-color:#000000;color:#ffffff;font-family:"Josefin Sans", sans-serif;
+  font-size:18px;font-style:italic;text-align:center;vertical-align:top}
+.tg .tg-q30c{background-color:#c1c1c1;border-color:#000000;color:#ffffff;font-family:"Josefin Sans", sans-serif;
+  font-size:18px;font-style:italic;text-align:center;vertical-align:top}
+.tg .tg-v239{background-color:#dfbb2a;border-color:#000000;color:#ffffff;font-family:"Josefin Sans", sans-serif;
+  font-size:18px;font-style:italic;text-align:center;vertical-align:top}
+.tg .tg-cq4g{border-color:#000000;font-family:"Josefin Sans", sans-serif;font-size:16px;text-align:center;
+  vertical-align:top}
+.tg .tg-qqm1{border-color:#000000;font-family:"Josefin Sans", sans-serif;font-size:20px;text-align:center;
+  vertical-align:top}
+
+/*THANK YOU SUBPAGE*/
+
+main.thankyou {
+    height: 35vh;
+}
+main.thankyou h1 {
+    font-size: 5rem;
+}
+main.thankyou button {
+    padding: 0.35rem 2rem;
+}
+/*----------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------*/

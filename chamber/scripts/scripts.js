@@ -91,7 +91,8 @@ function isLocalStorageSupported(){
     localStorage[x] = value
     return localStorage[x]
   }
-  
+  // execute functions only if window is discover.html
+  if(window.location.pathname == "/discover.html" || window.location.pathname == "/wdd230/chamber/discover.html") {
   if (isLocalStorageSupported){
     if(doesVariableExist('test')){
       localStorage.test = Number(localStorage.test) + 1
@@ -124,7 +125,9 @@ function isLocalStorageSupported(){
     document.getElementById("visitCounter").innerHTML =
       "Sorry, your browser does not support web storage...";
   }
-  
-  // console.log("localstorage visit count now: " + localStorage.visitcount);
-  
-  // localStorage.clear();
+}
+
+// hidden input element stores the date the form in join.html is fully loaded if window is join.html
+if(window.location.pathname == "/join.html" || window.location.pathname == "/wdd230/chamber/join.html") {
+  document.querySelector("#now").value = now;
+}
