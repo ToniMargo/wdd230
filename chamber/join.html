@@ -38,7 +38,7 @@
         <ul id="primaryNav">
             <li><a href="index.html">Home</a></li>
             <li><a href="discovery.html">Discover</a></li>
-            <li><a href="#">Directory</a></li>
+            <li><a href="discovery.html">Directory</a></li>
             <li class="active"><a href="join.html">Join</a></li>
             <li><a href="#">Contact</a></li>
             <li><a href="facebook.com" id="facebook"><img src="images/icons8-facebook-50.png" alt="facebook page link"></a></li>
@@ -60,16 +60,16 @@
         <input type="text" id="lname" name="lname" required>
 
         <label for="bposition">Business Position:</label>
-        <input type="text" title="bposition" id="bposition" name="bposition" pattern="[\w\s-]{7,}">
+        <input type="text" id="bposition" name="bposition" pattern="[\w\s-]{7,}" title="A valid business position should be 7 chatacters or longer.">
 
         <label for="email">Email:</label>
         <input type="text" id="email" name="email" placeholder="info@mybusiness.com" required>
 
         <label for="phone">Phone Number:</label>
-        <input type="tel" id="phone" name="phone" required>
+        <input type="tel" id="phone" name="phone" pattern="\([0-9]{3}\) [0-9]{3}[ -][0-9]{4}" title="A valid telephone number consist of a 3 digits code area between brackets, a space, the three first digits of the number, a space or hypen (-), and four more digits." required>
 
         <label for="bname">Business Name:</label>
-        <input type="text" title="bname" id="bname" name="bname" required>
+        <input type="text" id="bname" name="bname" required>
         
         <label for="mlevel">Membership Level:</label>
         <select name="mlevel" id="mlevel">

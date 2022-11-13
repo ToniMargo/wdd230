@@ -131,3 +131,57 @@ function isLocalStorageSupported(){
 if(window.location.pathname == "/join.html" || window.location.pathname == "/wdd230/chamber/join.html") {
   document.querySelector("#now").value = now;
 }
+
+
+// Directory.html card displayer:
+  const requestURL = 'json/data.json';
+  const cards = document.querySelector('.cards');
+
+  function displayCompanies(company) {
+    // Create elements to add to the document
+    let card = document.createElement('section');
+    
+    let name = document.createElement('h2');
+    let rating = document.createElement('p');
+    let image = document.createElement('img');
+    let website = document.createElement('p');
+    let phone = document.createElement('p'); 
+    let address = document.createElement('p');
+  
+    // Change the textContent property of the h2 element to contain the prophet's full name
+    name.textContent = `${company.name}`;
+    rating.innerHTML = `<b>Rating:</b> ${company.rating}`;
+    website.innerHTML = `<a href="#">${company.website}</a>`;
+    phone.innerHTML = `<b>Phone Number:</b> ${company.phone}`;
+    address.innerHTML = `<b>Address:</b> ${company.address}`
+  
+    // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values. (Fill in the blank with the appropriate variable).
+    image.setAttribute('src', company.imageurl);
+    image.setAttribute('alt', `Photo of ${company.name}`);
+    image.setAttribute('loading', 'lazy');
+  
+    // Add/append the section(card) with the h2 element
+    card.appendChild(name);
+    card.appendChild(rating);
+    card.appendChild(image);
+    card.appendChild(website);
+    card.appendChild(phone);
+    card.appendChild(address);
+  
+    // Add/append the existing HTML div with the cards class with the section(card)
+    document.querySelector('div.cards').appendChild(card);
+  }
+//if(window.location.pathname == "/directory.html" || window.location.pathname == "/wdd230/chamber/directory.html"){
+  fetch(requestURL)
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (jsonObject) {
+      console.table(jsonObject);  // temporary checking for valid response and data parsing
+      const companies = jsonObject['companies'];
+      companies.forEach(displayCompanies);
+    });
+
+
+
+

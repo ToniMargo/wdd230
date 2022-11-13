@@ -296,23 +296,23 @@ main.join textarea {
 .tg th{border-color:black;border-style:solid;border-width:1px;font-family:"Josefin Sans", sans-serif;font-size:14px;
   font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
 .tg .tg-anwi{border-color:#000000;font-family:"Josefin Sans", sans-serif;font-size:14px;text-align:center;
-  vertical-align:top}
-.tg .tg-b6f3{border-color:#000000;color:#9b9b9b;font-size:12px;text-align:left;vertical-align:top}
-.tg .tg-ow2t{border-color:#000000;color:#036400;font-size:12px;text-align:left;vertical-align:top}
+  vertical-align:middle}
+.tg .tg-b6f3{border-color:#000000;color:#9b9b9b;font-size:12px;text-align:left;vertical-align:middle}
+.tg .tg-ow2t{border-color:#000000;color:#036400;font-size:12px;text-align:left;vertical-align:middle}
 .tg .tg-6845{border-color:inherit;font-family:"Josefin Sans", Helvetica, sans-serif;font-size:24px;text-align:center;
-  vertical-align:top}
+  vertical-align:middle}
 .tg .tg-lfg3{border-color:#000000;font-family:"Josefin Sans", sans-serif;font-size:18px;font-style:italic;
-  text-align:center;vertical-align:top}
+  text-align:center;vertical-align:middle}
 .tg .tg-wvt3{background-color:#786312;border-color:#000000;color:#ffffff;font-family:"Josefin Sans", sans-serif;
-  font-size:18px;font-style:italic;text-align:center;vertical-align:top}
+  font-size:18px;font-style:italic;text-align:center;vertical-align:middle}
 .tg .tg-q30c{background-color:#c1c1c1;border-color:#000000;color:#ffffff;font-family:"Josefin Sans", sans-serif;
-  font-size:18px;font-style:italic;text-align:center;vertical-align:top}
+  font-size:18px;font-style:italic;text-align:center;vertical-align:middle}
 .tg .tg-v239{background-color:#dfbb2a;border-color:#000000;color:#ffffff;font-family:"Josefin Sans", sans-serif;
-  font-size:18px;font-style:italic;text-align:center;vertical-align:top}
+  font-size:18px;font-style:italic;text-align:center;vertical-align:middle}
 .tg .tg-cq4g{border-color:#000000;font-family:"Josefin Sans", sans-serif;font-size:16px;text-align:center;
-  vertical-align:top}
+  vertical-align:middle}
 .tg .tg-qqm1{border-color:#000000;font-family:"Josefin Sans", sans-serif;font-size:20px;text-align:center;
-  vertical-align:top}
+  vertical-align:middle}
 
 /*THANK YOU SUBPAGE*/
 
@@ -325,6 +325,42 @@ main.thankyou h1 {
 main.thankyou button {
     padding: 0.35rem 2rem;
 }
+/*----------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+
+
+/*----------------------------------------------------------------------------------*/
+/*---------------------------------DIRECTORY.HTML-----------------------------------*/
+/*----------------------------------------------------------------------------------*/
+main.directory h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+main.directory .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  }
+main.directory h2 {
+    color: #7C841F;
+}
+  main.directory .cards section {
+    margin: 0.8rem;
+    padding: 0.15rem;
+    background-color: #FAFBEE;
+    border: 1px solid #D3DC6A;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  main.directory .cards img {
+    width: 320px;
+    height: 200px;
+    border: 1px solid #D3DC6A;
+    margin: 0.25rem 0 2rem;
+  }
+
 /*----------------------------------------------------------------------------------*/
 /*----------------------------------------------------------------------------------*/
 /*----------------------------------------------------------------------------------*/

@@ -11,8 +11,8 @@ function displayProphets(prophet) {
   
     // Change the textContent property of the h2 element to contain the prophet's full name
     h2.textContent = `${prophet.name} ${prophet.lastname}`;
-    birthdate.textContent = `Date of Birth:  ${prophet.birthdate}`;
-    birthplace.textContent = `Place of Birth: ${prophet.birthplace}`;
+    birthdate.innerHTML = `<b>Date of Birth:</b> ${prophet.birthdate}`;
+    birthplace.innerHTML = `<b>Place of Birth:</b> ${prophet.birthplace}`;
   
     // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values. (Fill in the blank with the appropriate variable).
     portrait.setAttribute('src', prophet.imageurl);

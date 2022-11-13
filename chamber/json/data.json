@@ -1,0 +1,124 @@
+{
+    "companies" : [
+        {
+            "name": "Rick's Bricks",
+            "numberOfEmployees": 102,
+            "ceo": "Rick Keen",
+            "rating": 4.2,
+            "address": "Gallo St. 983",
+            "phone": "(210) 115-9871",
+            "website": "ricksbricks.com",
+            "imageurl": "images/directory-images/ricksbricks.jpg",
+            "membership-level": "gold"
+        },
+
+        {
+            "name": "Vianney's Restaurant",
+            "numberOfEmployees": 30,
+            "ceo": "Vianney Alcala",
+            "rating": 5.0,
+            "address": "Heart Av. 111",
+            "phone": "(210) 789-1235",
+            "website": "vianneysrestaurant.com",
+            "imageurl": "images/directory-images/vianneysrestaurant.jpg",
+            "membership-level": "silver"
+        },
+
+        {
+            "name": "Andrea's Giftshop",
+            "numberOfEmployees": 15,
+            "ceo": "Andrea Lombardo",
+            "rating": 3.2,
+            "address": "Freedom Pwy. 123",
+            "phone": "(210) 618-8871",
+            "website": "andreasgiftshop.com",
+            "imageurl": "images/directory-images/andreasgiftshop.jpg",
+            "membership-level": "silver"
+        },
+
+        {
+            "name": "Stallions Gym",
+            "numberOfEmployees": 12,
+            "ceo": "Frank Grasso",
+            "rating": 4.1,
+            "address": "5th Street 21",
+            "phone": "(210) 1145-6521",
+            "website": "stallionsgym.com",
+            "imageurl": "images/directory-images/stallionsgym.jpg",
+            "membership-level": "bronze"
+        },
+
+        {
+            "name": "Shatta's Fashion",
+            "numberOfEmployees": 15,
+            "ceo": "Shatta Chantelle",
+            "rating": 2.5,
+            "address": "Crave St. 121",
+            "phone": "(210) 221-8998",
+            "website": "shattasfashion.com",
+            "imageurl": "images/directory-images/shattasfashion.jpg",
+            "membership-level": "gold"
+        },
+
+        {
+            "name": "PsyloHealth",
+            "numberOfEmployees": 5,
+            "ceo": "Amy Ramirez",
+            "rating": 5.0,
+            "address": "Heart Av. 561",
+            "phone": "(210) 544-1331",
+            "website": "psylohealth.com",
+            "imageurl": "images/directory-images/psylohealth.jpg",
+            "membership-level": "bronze"
+        },
+
+        {
+            "name": "Gustavo's Flowershop",
+            "numberOfEmployees": 8,
+            "ceo": "Gustavo Araiza",
+            "rating": 4.8,
+            "address": "Coleman Av. 332",
+            "phone": "(210) 778-4141",
+            "website": "gustavosflowershop.com",
+            "imageurl": "images/directory-images/gustavosflowershop.jpg",
+            "membership-level": "silver"
+        },
+
+        {
+            "name": "DeFaux Workshop",
+            "numberOfEmployees": 25,
+            "ceo": "John DeFaux",
+            "rating": 3.5,
+            "address": "Parakeet St. 498",
+            "phone": "(210) 466-6612",
+            "website": "defauxworkshop.com",
+            "imageurl": "images/directory-images/defauxworkshop.jpg",
+            "membership-level": "bronze"
+        },
+
+        {
+            "name": "Darrywill's",
+            "numberOfEmployees": 131,
+            "ceo": "Robert Langford",
+            "rating": 4.3,
+            "address": "Chacha Av. 4",
+            "phone": "(210) 1122-0010",
+            "website": "darrywills.com",
+            "imageurl": "images/directory-images/darrywills.jpg",
+            "membership-level": "gold"
+        },
+
+        {
+            "name": "Woody's Woodworks",
+            "numberOfEmployees": 25,
+            "ceo": "Woody Mill",
+            "rating": 4.4 ,
+            "address": "Coleman Av. 212",
+            "phone": "(210) 444-7777",
+            "website": "woodyswoodworks.com",
+            "imageurl": "images/directory-images/woodyswoodworks.jpg",
+            "membership-level": "bronze"
+        }
+    ]
+
+}
