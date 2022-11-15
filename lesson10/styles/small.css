@@ -1,0 +1,62 @@
+body {
+    margin: 3vh auto;
+    width: 250px;
+    font-family: 'Nunito', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Oswald', sans-serif;
+}
+
+h1 {
+    color: darkslateblue;
+    font-size: 1.5em;
+}
+
+h2 {
+    font-size: 1em;
+    text-align: center;
+}
+
+/*---------------------------------------HEADER---------------------------------------*/
+
+/*------------------------------------------------------------------------------------*/
+
+
+/*---------------------------------------MAIN---------------------------------------*/
+main p {
+    text-align: center;
+}
+figure{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+figure img {
+    margin: auto;
+    width: 50px;
+}
+figcaption {
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 0.15cm;
+}
+
+
+/*----------------------------------------------------------------------------------*/
+
+
+
+/*---------------------------------------FOOTER-------------------------------------*/
+
+footer p {
+    text-align: center;
+    font-size: 0.8em;
+    margin-bottom: -0.8vh;
+}
+
+#lastmod {
+    color: darkslateblue;
+    font-size: 0.8em;
+}
+/*----------------------------------------------------------------------------------*/
