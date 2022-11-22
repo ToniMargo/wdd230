@@ -49,8 +49,21 @@
     <!--CONTENT HERE-->
     <main class="directory">
         <h1>Directory</h1>
+        <div class="buttons">
+            <button onclick="displayCards()">&#119638</button>
+            <button onclick="displayList()">&#9776</button>
+        </div>
         <div class="cards">
         </div>
+        <table class="companyList">
+            <thead>
+                <th>Name</th>
+                <th>Rating</th>
+                <th>Website</th>
+                <th>Phone</th>
+                <th>Address</th>
+            </thead>
+        </table>
     </main>
 
     <!--FOOTER HERE-->
@@ -62,8 +75,7 @@
         <p id="phone">+(123) 456-7890</p>
         <p id="location"><a href="https://www.google.com/maps/">📍 Location</a></p>
         <p id="foot">&copy; <span id="date1"></span> Chacha Chamber | Antonio Martinez | WDD 230 Project | <span id="lastmod"></span></p>
-    </footer>
-    <script src="scripts/windchill.js"></script>
+    </footer> 
     <script src="scripts/scripts.js"></script>
 </body>
 </html>
