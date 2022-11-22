@@ -29,7 +29,6 @@ h3#meetingBanner {
 }
 /*---------------------------------------HEADER---------------------------------------*/
 header {
-    width: 100%;
     display: block;
     background-color: rgba(216, 226, 121, 0.05);
     margin-bottom: 0;
@@ -144,44 +143,66 @@ main.home {
 
 /*-----------------------------*/
 /*-----------WEATHER-----------*/
-#weather section span.windSpeed {
-    color: #333;
-    position: absolute;
-    top: 14vh;
-	left: 6%;
-    transition: .5s ease;
-    opacity: 0;
-}
-#weather section span.windChill {
-    color: #333;
-    position: absolute;
-    top: 16vh;
-	left: 6%;
-    transition: .5s ease;
-    opacity: 0;
-}
-#weather:hover section span.windSpeed {
-    opacity: 1;
-}
-#weather:hover section span.windChill {
-    opacity: 1;
-}
+
 .temperature{
-    position: absolute;
-    top: 0%;
-	left: 3%;
-    padding: 0 0.75rem;
     color: #fff;
     text-shadow: -1.5px 0 black, 0 1.5px black, 1.5px 0 black, 0 -1.5px black;
     font-size: 5rem;
     transition: .5s ease;
+    position: absolute;
+    top: 0%;
+    left: 3%;
 }
 #weather:hover .temperature {
     color: darkorange;
     text-shadow: none;
 }
-/*-----------WEATHER-----------*/
-/*-----------------------------*/
+#weather figure {
+    position: absolute;
+    top: 16%;
+    right: 3%;
+    transition: .5s ease;
+    opacity: 0;
+    color: #333;
+}
+#weather:hover figure {
+    opacity: 1;
+}
+#weather figure img{
+    width: 100px;
+    opacity: 1;
+}
+#weather figure figcaption {
+    text-transform: capitalize;
+    position: inherit;
+    text-align: center;
+    color: #333;
+}
+#windSpeed {
+    position: absolute;
+    top: 75%;
+    left: 3%;
+    transition: .5s ease;
+    opacity: 0;
+    color: #333;
+}
+#weather:hover #windSpeed {
+    opacity: 1;
+}
+#windChill {
+    position: absolute;
+    top: 85%;
+    left: 3%;
+    transition: .5s ease;
+    opacity: 0;
+    color: #333;
+}
+#weather:hover #windChill {
+    opacity: 1;
+}
+
+/*-----------WEATHER-END----------*/
+/*--------------------------------*/
 
 .card:hover img {
     opacity: 0.3;
@@ -222,6 +243,7 @@ p#location a {
 p#foot {
     text-align: center;
     background-color: #d8e279;
+    color: #fff;
     padding: 0.5rem;
 }
 
@@ -337,10 +359,19 @@ main.directory h1 {
     font-size: 3rem;
     text-align: center;
 }
+main.directory .buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3vh;
+}
+main.directory .buttons button {
+    margin: 1vh;
+    padding: 1vh;
+}
 main.directory .cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  }
+}
 main.directory h2 {
     color: #7C841F;
 }
@@ -360,7 +391,25 @@ main.directory h2 {
     border: 1px solid #D3DC6A;
     margin: 0.25rem 0 2rem;
   }
+  
+main.directory .companyList {
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+main.directory .companyList th {
+    background-color: #dfbb2a;
+    color: #fff;
+    padding: 0.3em;
+    font-size: 115%;
+}
 
+main.directory .companyList td {
+    padding: 0.3em;
+}
+main.directory .companyList tr:nth-child(even) {
+    background-color: rgba(211, 220, 106, 0.3);
+}
 /*----------------------------------------------------------------------------------*/
 /*----------------------------------------------------------------------------------*/
 /*----------------------------------------------------------------------------------*/
