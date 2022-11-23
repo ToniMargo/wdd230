@@ -42,7 +42,7 @@ function displayResults(weatherData) {
   if(temp<=50 && wind>3){
     windChill.innerHTML = `<strong>Wind Chill:</strong> ${wChill.toFixed(1)}°F`;
   } else {
-    windChill.innerHTM = `<strong>Wind Chill:</strong> N/A`;
+    windChill.innerHTML = `<strong>Wind Chill:</strong> N/A`;
   }
         
         
