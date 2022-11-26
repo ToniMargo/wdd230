@@ -311,30 +311,95 @@ main.join textarea {
     padding: 0.5rem;
 }
 
-
-.tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{border-color:black;border-style:solid;border-width:1px;font-family:"Josefin Sans", sans-serif;font-size:14px;
-  overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg th{border-color:black;border-style:solid;border-width:1px;font-family:"Josefin Sans", sans-serif;font-size:14px;
-  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-anwi{border-color:#000000;font-family:"Josefin Sans", sans-serif;font-size:14px;text-align:center;
-  vertical-align:middle}
-.tg .tg-b6f3{border-color:#000000;color:#9b9b9b;font-size:12px;text-align:left;vertical-align:middle}
-.tg .tg-ow2t{border-color:#000000;color:#036400;font-size:12px;text-align:left;vertical-align:middle}
-.tg .tg-6845{border-color:inherit;font-family:"Josefin Sans", Helvetica, sans-serif;font-size:24px;text-align:center;
-  vertical-align:middle}
-.tg .tg-lfg3{border-color:#000000;font-family:"Josefin Sans", sans-serif;font-size:18px;font-style:italic;
-  text-align:center;vertical-align:middle}
-.tg .tg-wvt3{background-color:#786312;border-color:#000000;color:#ffffff;font-family:"Josefin Sans", sans-serif;
-  font-size:18px;font-style:italic;text-align:center;vertical-align:middle}
-.tg .tg-q30c{background-color:#c1c1c1;border-color:#000000;color:#ffffff;font-family:"Josefin Sans", sans-serif;
-  font-size:18px;font-style:italic;text-align:center;vertical-align:middle}
-.tg .tg-v239{background-color:#dfbb2a;border-color:#000000;color:#ffffff;font-family:"Josefin Sans", sans-serif;
-  font-size:18px;font-style:italic;text-align:center;vertical-align:middle}
-.tg .tg-cq4g{border-color:#000000;font-family:"Josefin Sans", sans-serif;font-size:16px;text-align:center;
-  vertical-align:middle}
-.tg .tg-qqm1{border-color:#000000;font-family:"Josefin Sans", sans-serif;font-size:20px;text-align:center;
-  vertical-align:middle}
+/*----------------------------------------------------------------------------------*/
+/*----------------------------------------TABLE-------------------------------------*/
+.scrolling-wrapper-flexbox {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    margin: 2em 0;
+  }
+.tg {
+    border-collapse: collapse;
+    border-spacing: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .tg td {
+    border-width: 1px;
+    font-family: "Josefin Sans", sans-serif;
+    text-align: center;
+    vertical-align: middle;
+    width: 151px;
+  }
+  .tg th {
+    font-size: 1rem;
+    font-weight: normal;
+    overflow: hidden;
+    word-break: normal;
+  }
+  
+  .tg .tg-lfg3 {
+    background-color: #036400;
+    padding: 0.5em;
+    color: #fff;
+    font-size: 2rem;
+    font-style: italic;
+  }
+  .tg .tg-wvt3 {
+    background-color: #786312;
+    color: #ffffff;
+    font-size: 2rem;
+    font-style: italic;
+  }
+  .tg .tg-q30c {
+    background-color: #c1c1c1;
+    color: #ffffff;
+    padding: 1em;
+    font-size: 2rem;
+    font-style: italic;
+  }
+  .tg .tg-v239 {
+    background-color: #dfbb2a;
+    color: #ffffff;
+    padding: 1em;
+    font-size: 2rem;
+    font-style: italic;
+  }
+  .tg .tg-anwi {
+    padding-bottom: 2em;
+    font-size: 1rem;
+    text-align: center;
+    vertical-align: top;
+  }
+  .tg .tg-b6f3 {
+    color: #9b9b9b;
+    padding: 1em;
+    font-size: 1rem;
+  }
+  .tg .tg-ow2t {
+    color: #036400;
+    padding: 1em;
+    font-size: 1rem;
+  }
+  .tg .tg-6845 {
+    font-family: "Josefin Sans", Helvetica, sans-serif;
+    font-size: 2rem;
+  }
+  .tg .tg-cq4g {
+    font-size: 2rem;
+  }
+  .tg .tg-qqm1 {
+    font-size: 2.5rem;
+    text-align: center;
+    vertical-align: bottom;
+    padding-top: 1.5rem;
+  }
+  
+/*--------------------------------------TABLE-END-----------------------------------*/
+/*----------------------------------------------------------------------------------*/
 
 /*THANK YOU SUBPAGE*/
 
@@ -347,7 +412,7 @@ main.thankyou h1 {
 main.thankyou button {
     padding: 0.35rem 2rem;
 }
-/*----------------------------------------------------------------------------------*/
+/*THANK YOU SUBPAGE-END--------------------------------------------------------------*/
 /*----------------------------------------------------------------------------------*/
 /*----------------------------------------------------------------------------------*/
 

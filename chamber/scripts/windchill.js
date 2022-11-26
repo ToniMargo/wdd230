@@ -4,10 +4,11 @@ const currentTemp = document.querySelector('#currentTemp');
 const weatherIcon = document.querySelector('#weatherIcon');
 const windSpeed = document.querySelector('#windSpeed');
 const windChill = document.querySelector('#windChill');
-const captionDesc = document.querySelector('#weatherDesc')
+const captionDesc = document.querySelector('#weatherDesc');
 
 const url = 'https://api.openweathermap.org/data/2.5/weather?q=San-Antonio&units=imperial&appid=d8b80212a11f7cffaca6a1ced52c249f'
 
+if(window.location.pathname == "/index.html" || window.location.pathname == "/wdd230/chamber/index.html" || window.location.pathname == "/wdd230/chamber/") {
 async function apiFetch() {
     try {
       const response = await fetch(url);
@@ -21,9 +22,9 @@ async function apiFetch() {
         console.log(error);
     }
   }
-  
-  apiFetch();
 
+  apiFetch();
+} 
 function displayResults(weatherData) {
   currentTemp.innerHTML = `${weatherData.main.temp.toFixed(0)}°`;
   const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;

@@ -1,4 +1,4 @@
-@media only screen and (min-width: 72rem) {
+@media only screen and (min-width: 64rem) {
     body {
         width: 75%;
         margin: 0 auto;
@@ -121,7 +121,24 @@
     /*----------------------------------------------------------------------------------*/
     /*----------------------------------JOIN.HTML----------------------------------*/
     /*----------------------------------------------------------------------------------*/
+    main.join {
+        width: 95%;
+        margin: auto;
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-columns: repeat(12, 6.25%);
+    }
+    main.join h1 {
+        text-align: center;
+        grid-column: 1 / 15;
+    }
+    main.join form {
+        grid-column: 1 / 6;
+    }
 
+    .scrolling-wrapper-flexbox {
+        grid-column: 7 / 13;
+    }
 
     /*----------------------------------------------------------------------------------*/
     /*----------------------------------------------------------------------------------*/

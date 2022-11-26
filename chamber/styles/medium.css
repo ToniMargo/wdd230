@@ -1,4 +1,4 @@
-@media only screen and (min-width: 35em) {
+@media only screen and (min-width: 32em) {
     
     /*---------------------------------------HEADER---------------------------------------*/
     header {
@@ -178,22 +178,9 @@
     /*----------------------------------JOIN.HTML----------------------------------*/
     /*----------------------------------------------------------------------------------*/
 
-    main.join {
-        display: grid;
-        grid-gap: 2rem;
-        grid-template-columns: repeat(4, 1fr);
-    }
-    main.join h1 {
-        grid-column: 1 / 5;
-        text-align: center;
-    }
-    main.join form {
-        grid-column: 2 / 3;
-    }
-
-    main.join table.tg {
-        grid-column: 3 / 4;
-    }
+    .tg {
+        margin: 3em auto;
+      }
 
 
     /*----------------------------------------------------------------------------------*/

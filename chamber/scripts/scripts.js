@@ -190,13 +190,13 @@ function listCompanies(company){
   addressCell.textContent = company.address;
 }
 
-
-fetch(requestURL)
+if(window.location.pathname == "/directory.html" || window.location.pathname == "/wdd230/chamber/directory.html") {
+  fetch(requestURL)
   .then(function (response) {
     return response.json();
   })
   .then(function (jsonObject) {
-    console.table(jsonObject);  // temporary checking for valid response and data parsing
+    //console.table(jsonObject);  // temporary checking for valid response and data parsing
     const companies = jsonObject['companies'];
     companies.forEach(displayCompanies);
     companies.forEach(listCompanies);
@@ -210,4 +210,4 @@ function displayList() {
   document.querySelector('.cards').style.display = 'none';
   document.querySelector('.companyList').style.display = 'flex';
 }
-
+}

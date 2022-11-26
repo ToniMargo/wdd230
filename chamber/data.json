@@ -42,7 +42,7 @@
             "ceo": "Frank Grasso",
             "rating": 4.1,
             "address": "5th Street 21",
-            "phone": "(210) 1145-6521",
+            "phone": "(210) 145-6521",
             "website": "stallionsgym.com",
             "imageurl": "images/directory-images/stallionsgym.jpg",
             "membership-level": "bronze"
@@ -69,7 +69,7 @@
             "phone": "(210) 544-1331",
             "website": "psylohealth.com",
             "imageurl": "images/directory-images/psylohealth.jpg",
-            "membership-level": "bronze"
+            "membership-level": "gold"
         },
 
         {
@@ -102,7 +102,7 @@
             "ceo": "Robert Langford",
             "rating": 4.3,
             "address": "Chacha Av. 4",
-            "phone": "(210) 1122-0010",
+            "phone": "(210) 122-0010",
             "website": "darrywills.com",
             "imageurl": "images/directory-images/darrywills.jpg",
             "membership-level": "gold"
