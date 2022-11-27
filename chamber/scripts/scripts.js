@@ -211,3 +211,31 @@ function displayList() {
   document.querySelector('.companyList').style.display = 'flex';
 }
 }
+
+// Display three gold level companies in index.html spotlights
+const spotlightImgs = document.querySelectorAll('img.spotlightImg');
+const spotlightHeaders = document.querySelectorAll('h2.spotlightHeader');
+
+function advertiseCompanies(company, header, image) {
+  header.innerHTML = `Featured: ${company.name}`;
+  image.setAttribute('src', company.imageurl);
+  image.setAttribute('alt', `Photo of ${company.name}`);
+  image.setAttribute('loading', 'lazy');
+}
+if(window.location.pathname == "/index.html" || window.location.pathname == "/wdd230/chamber/index.html" || window.location.pathname == "/wdd230/chamber/") {
+fetch(requestURL)
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (jsonObject) {
+    //console.table(jsonObject);  // temporary checking for valid response and data parsing
+    const companies = jsonObject['companies'];
+    let i = 0;
+    for(let j = 0; j < companies.length; j++) {
+      if(companies[j].membershipLevel == "gold" && i < 3) {
+        advertiseCompanies(companies[j], spotlightHeaders[i], spotlightImgs[i]);
+        i++;
+      }
+    }
+  });
+}

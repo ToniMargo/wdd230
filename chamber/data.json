@@ -9,7 +9,7 @@
             "phone": "(210) 115-9871",
             "website": "ricksbricks.com",
             "imageurl": "images/directory-images/ricksbricks.jpg",
-            "membership-level": "gold"
+            "membershipLevel": "gold"
         },
 
         {
@@ -21,7 +21,7 @@
             "phone": "(210) 789-1235",
             "website": "vianneysrestaurant.com",
             "imageurl": "images/directory-images/vianneysrestaurant.jpg",
-            "membership-level": "silver"
+            "membershipLevel": "silver"
         },
 
         {
@@ -33,7 +33,7 @@
             "phone": "(210) 618-8871",
             "website": "andreasgiftshop.com",
             "imageurl": "images/directory-images/andreasgiftshop.jpg",
-            "membership-level": "silver"
+            "membershipLevel": "silver"
         },
 
         {
@@ -45,7 +45,7 @@
             "phone": "(210) 145-6521",
             "website": "stallionsgym.com",
             "imageurl": "images/directory-images/stallionsgym.jpg",
-            "membership-level": "bronze"
+            "membershipLevel": "bronze"
         },
 
         {
@@ -57,7 +57,7 @@
             "phone": "(210) 221-8998",
             "website": "shattasfashion.com",
             "imageurl": "images/directory-images/shattasfashion.jpg",
-            "membership-level": "gold"
+            "membershipLevel": "gold"
         },
 
         {
@@ -69,7 +69,7 @@
             "phone": "(210) 544-1331",
             "website": "psylohealth.com",
             "imageurl": "images/directory-images/psylohealth.jpg",
-            "membership-level": "gold"
+            "membershipLevel": "gold"
         },
 
         {
@@ -81,7 +81,7 @@
             "phone": "(210) 778-4141",
             "website": "gustavosflowershop.com",
             "imageurl": "images/directory-images/gustavosflowershop.jpg",
-            "membership-level": "silver"
+            "membershipLevel": "silver"
         },
 
         {
@@ -93,7 +93,7 @@
             "phone": "(210) 466-6612",
             "website": "defauxworkshop.com",
             "imageurl": "images/directory-images/defauxworkshop.jpg",
-            "membership-level": "bronze"
+            "membershipLevel": "bronze"
         },
 
         {
@@ -105,7 +105,7 @@
             "phone": "(210) 122-0010",
             "website": "darrywills.com",
             "imageurl": "images/directory-images/darrywills.jpg",
-            "membership-level": "gold"
+            "membershipLevel": "gold"
         },
 
         {
@@ -117,7 +117,7 @@
             "phone": "(210) 444-7777",
             "website": "woodyswoodworks.com",
             "imageurl": "images/directory-images/woodyswoodworks.jpg",
-            "membership-level": "bronze"
+            "membershipLevel": "bronze"
         }
     ]
 

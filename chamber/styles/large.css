@@ -136,7 +136,7 @@
         grid-column: 1 / 6;
     }
 
-    .scrolling-wrapper-flexbox {
+    .join .scrolling-wrapper-flexbox {
         grid-column: 7 / 13;
     }
 
