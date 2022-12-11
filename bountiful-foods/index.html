@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Home | Bountiful Foods</title>
+
+  <meta name="description" content="Home page for Bountiful Foods">
+  <link rel="shortcut icon" href="favicon.ico">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Solway:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/medium.css">
+  <link rel="stylesheet" href="styles/large.css">
+
+</head>
+<body>
+    <!--HEADER HERE-->
+    <header>
+        <div id="company-info">
+            <img class="siteLogo" src="images/logo-orange.webp" alt="logo of bountifulfoods.com">
+            <h1 class="title">Bountiful Foods</h1>
+            <h2 class="subtitle">Eat healthy, live free</h2>
+        </div>
+        
+        <!--NAV HERE-->
+        <nav>
+            <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+            <ul id="primaryNav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="fresh.html">Fresh</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                </ul>
+        </nav>
+    </header>
+
+
+    
+
+    <!--CONTENT HERE-->
+    <main class="home">
+
+      <div class="card" id="CTA">
+        <picture>
+          <img loading="lazy" data-src="images/home/CTA.jpg" src="images/home/CTABlur.jpg" alt="">
+        </picture>
+        <h2>CTA</h2>
+      </div>
+
+      <div class="card" id="summary">
+        <picture>
+          <img loading="lazy" data-src="images/home/summary.jpg" src="images/home/summaryBlur.jpg" alt="">
+        </picture>
+        <h2>Summary</h2>
+      </div>
+
+      <div class="card" id="drinks">
+        <picture>
+          <img loading="lazy" data-src="images/home/drinks.jpg" src="images/home/drinksBlur.jpg" alt="">
+        </picture>
+        <h2>Drink info</h2>
+      </div>
+
+      <div class="card" id="weather">
+        <picture>
+          <img loading="lazy" data-src="images/home/weather.jpg" src="images/home/weatherBlur.jpg" alt="">
+        </picture>
+        <h2>Weather</h2>
+      </div>
+
+    </main>
+
+    <!--FOOTER HERE-->
+    <footer>
+      <img class="siteLogo" src="images/logo-orange.webp" alt="logo of bountifulfoods.com">
+        <h1 class="title">Bountiful Foods</h1>
+        <p id="myaddress">4901 Via Hinton Carlsbad, CA 92008</p>
+        <p id="myemail">info@bountifulfoods.org</p>
+        <p id="myphone">+(555) 123-4567</p>
+        <p id="mylocation"><a href="https://www.google.com/maps/">📍 Location</a></p>
+        <ul id="SM-list">
+          <li><a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><img src="images/SM-black/facebook.png" alt="link to facebook page"></a></li>
+          <li><a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><img src="images/SM-black/instagram.png" alt="link to instagram page"></a></li>
+          <li><a href="https://www.pinterest.com" target="_blank" rel="noopener noreferrer"><img src="images/SM-black/pinterest.png" alt="link to pinterest page"></a></li>
+        </ul>
+        <p id="foot">&copy; <span id="date1"></span> Bountiful Foods | Antonio Martinez | WDD 230 Project | <span id="lastmod"></span></p>
+          
+    </footer>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/scripts.js"></script>
+</body>
+</html>

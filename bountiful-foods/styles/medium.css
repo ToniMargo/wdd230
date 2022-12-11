@@ -1,0 +1,165 @@
+@media only screen and (min-width: 32em) {
+    
+    main {
+        width: auto;
+        margin: 2.5vh 5vw;
+    }
+    /*---------------------------------------HEADER---------------------------------------*/
+    header {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        background-color: #fff;
+        padding: 2vh 0;
+    }
+
+    #company-info .siteLogo {
+        width: 100px;
+    }
+    #company-info {
+        grid-column: 1 / 2;
+        margin: auto auto auto 5vw;
+    }   
+
+    nav {
+        grid-column: 2 / 3;
+        display: flex;
+        margin: auto 5vw auto auto;
+    }
+    /*------------------------------------------NAV---------------------------------------*/
+
+    nav button {display: none;}
+
+    nav ul#primaryNav {
+        display: flex;
+        border: none;
+    }
+    nav ul li a {
+        padding: 1vh 2vw;
+    }
+
+    /*------------------------------------------------------------------------------------*/
+
+    /*---------------------------------------MAIN---------------------------------------*/
+    main.home {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(6, 7rem);
+        column-gap: 4vw;
+    }
+    div#CTA {
+        grid-column: 1 / 9;
+        grid-row: 1 / 5;
+    }
+    div#summary {
+        grid-column: 9 / 13;
+        grid-row: 1 / 4;
+    }
+    div#drinks {
+        display: inline;
+        grid-column: 9 / 13;
+        grid-row: 4 / 7;
+    }
+    div#weather {
+        grid-column: 1 / 9;
+        grid-row: 5 / 7;
+    }
+    /*----------------------------------------------------------------------------------*/
+
+    /*---------------------------------------FOOTER-------------------------------------*/
+    footer {
+        grid-template-columns: 150px auto;
+    }
+    
+    footer .siteLogo {
+        width: 100px;
+        grid-column: 1 / 2;
+        grid-row:  1 / 6;
+        align-self: center;
+        justify-self: center;
+    }
+    footer #SM-list {
+        grid-column: 3 / 4;
+        grid-row: 1 / 6;
+        display: flex;
+        list-style-type: none;
+        justify-content: end;
+        align-items: center;
+        margin-right: 5vw;
+    }
+    footer #SM-list li img {
+        width: 75%;
+    }
+    /*----------------------------------------------------------------------------------*/
+
+    /*----------------------------------------------------------------------------------*/
+    /*----------------------------------DISCOVERY.HTML----------------------------------*/
+    /*----------------------------------------------------------------------------------*/
+
+    main.discover img {
+        transition: .5s ease;
+    }
+
+    main.discover div:hover img {
+        opacity: 0.75;
+      }
+
+    /*----------------------------------------------------------------------------------*/
+    /*----------------------------------------------------------------------------------*/
+    /*----------------------------------------------------------------------------------*/
+
+    
+    /*----------------------------------------------------------------------------------*/
+    /*----------------------------------JOIN.HTML----------------------------------*/
+    /*----------------------------------------------------------------------------------*/
+
+    .tg {
+        margin: 3em auto;
+      }
+
+
+    /*----------------------------------------------------------------------------------*/
+    /*----------------------------------------------------------------------------------*/
+    /*----------------------------------------------------------------------------------*/
+
+    /*----------------------------------------------------------------------------------*/
+    /*---------------------------------CONTACT.HTML-------------------------------------*/
+    /*----------------------------------------------------------------------------------*/
+    main.contact {
+        width: 85%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(12, 8.3%);
+        grid-template-rows: auto;
+    }
+    main.contact h1 {
+        grid-column: 1 / 13;
+        grid-row: 1 / 2;
+    }
+    main.contact form {
+        grid-column: 2 / 6;
+        grid-row: 2 / 12;
+    }
+    main.contact form input {
+        margin: 1rem 0;
+        padding: 0.3rem;
+    }
+    main.contact form button {
+        margin: 3rem auto;
+        font-size: 2rem;
+        width: 10rem;
+    }
+    main.contact #officeHours {    
+        grid-column: 8 / 12;
+        grid-row: 3 / 6;
+    }
+    
+    main.contact #representatives {    
+        grid-column: 8 / 12;
+        grid-row: 7 / 10;
+    }
+    /*----------------------------------------------------------------------------------*/
+    /*----------------------------------------------------------------------------------*/
+    /*----------------------------------------------------------------------------------*/
+}
+
+
