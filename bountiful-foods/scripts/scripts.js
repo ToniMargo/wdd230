@@ -41,7 +41,7 @@ const imgObserver = new IntersectionObserver((entries, imgObserver) => {
             preloadImage(entry.target);
             imgObserver.unobserve(entry.target);
         }
-    })
+    });
 }, imgOptions);
 
 images.forEach(image => {
@@ -49,175 +49,238 @@ images.forEach(image => {
 });
 //----------------------------------------------------------------------------
 
-//Local Storage Visit Counter (All credits to Dean: https://codepen.io/josdea/pen/qaZgyJ)
-
 function isLocalStorageSupported(){
-    if (typeof Storage !== "undefined")
-      //local storage is supported
-      return true;
-    else{
-      //local storage is not supported
-      return false;
-    }
+  if (typeof Storage !== "undefined")
+    //local storage is supported
+    return true;
+  else{
+    //local storage is not supported
+    return false;
   }
-  
-  function doesVariableExist(x){
-    if (localStorage[x]) {
-      return true;
-    }else{
-      return false;
-    }
+}
+
+function doesVariableExist(x){
+  if (localStorage[x]) {
+    return true;
+  }else{
+    return false;
   }
-  
-  function createStorageVariable(x, value){
-    localStorage[x] = value
-    return localStorage[x]
-  }
-  // execute functions only if window is discover.html
-  if(window.location.pathname == "/discover.html" || window.location.pathname == "/wdd230/chamber/discover.html") {
+}
+
+function createStorageVariable(x, value){
+  localStorage[x] = value;
+  return localStorage[x];
+}
+
+// Index.html
+if(window.location.pathname === "/index.html" || window.location.pathname === "/") {
   if (isLocalStorageSupported){
     if(doesVariableExist('test')){
-      localStorage.test = Number(localStorage.test) + 1
+      localStorage.test = Number(localStorage.test) + 1;
     }else{
-      localStorage.test = 1
+      localStorage.test = 1;
     }
-    console.log(localStorage.test)
+    //console.log(localStorage.test)
   }
-  // localStorage.clear()
+  //localStorage.clear()
   if (typeof Storage !== "undefined") {
     //Local storage is supported
-    if (localStorage.visitcount) {
-      // variable exists for this site they've been here before so do things
-      document.getElementById("visitCounter").innerHTML =
-        "Hello there, you've been here " +
-        localStorage.visitcount +
-        " times before.";
-      localStorage.visitcount = Number(localStorage.visitcount) + 1; //update variable for existing users
+    if (localStorage.drinkCount) {
+      document.querySelector('#drinkCounter').innerHTML = localStorage.drinkCount; 
     } else {
-      // variable not found they haven't been here before
-      localStorage.visitcount = 1; //set initial value of variable for this site and then do things for first time
-      document.getElementById("visitCounter").innerHTML =
-        "This is your first time here! Welcome to the Discovery page.";
+      document.querySelector('#drinkCounter').innerHTML = 0; 
     }
   } else {
-    // their browser doesn't support local storage so let them know or just do nothing
-    alert(
-      "Sorry, your browser does not support web storage.  Changes will not be saved"
-    );
-    document.getElementById("visitCounter").innerHTML =
-      "Sorry, your browser does not support web storage...";
+    document.querySelector('#drinkCounter').innerText = "?"; 
   }
 }
-
-// hidden input element stores the date the form in join.html is fully loaded if window is join.html
-if(window.location.pathname == "/join.html" || window.location.pathname == "/wdd230/chamber/join.html") {
-  document.querySelector("#now").value = now;
-}
-
-
-// Directory.html card displayer:
-
-const requestURL = 'data.json';
-const cards = document.querySelector('.cards');
-const table = document.querySelector('.companyList');
-
-function displayCompanies(company) {
-  // Create elements to add to the document
-  let card = document.createElement('section');
-    
-  let name = document.createElement('h2');
-  let rating = document.createElement('p');
-  let image = document.createElement('img');
-  let website = document.createElement('p');
-  let phone = document.createElement('p'); 
-  let address = document.createElement('p');
   
-  // Change the textContent property of the h2 element to contain the prophet's full name
-  name.textContent = `${company.name}`;
-  rating.innerHTML = `<b>Rating:</b> ${company.rating}`;
-  website.innerHTML = `<a href="#">${company.website}</a>`;
-  phone.innerHTML = `<b>Phone Number:</b> ${company.phone}`;
-  address.innerHTML = `<b>Address:</b> ${company.address}`
-  
-  // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values. (Fill in the blank with the appropriate variable).
-  image.setAttribute('src', company.imageurl);
-  image.setAttribute('alt', `Photo of ${company.name}`);
-  image.setAttribute('loading', 'lazy');
-  
-  // Add/append the section(card) with the h2 element
-  card.appendChild(name);
-  card.appendChild(rating);
-  card.appendChild(image);
-  card.appendChild(website);
-  card.appendChild(phone);
-  card.appendChild(address);
-  
-  // Add/append the existing HTML div with the cards class with the section(card)
-  cards.appendChild(card);
-}
+// Fresh.html:
 
-function listCompanies(company){
-  row = table.insertRow();
+const requestURL = 'json/fruit.json';
+const fruitSelectors = document.querySelectorAll('.fruit');
+const formInputs = document.querySelectorAll('input');
+const formTextarea = document.querySelector('textarea');
 
-  nameCell = row.insertCell();
-  ratingCell = row.insertCell();
-  websiteCell = row.insertCell();
-  phoneCell = row.insertCell();
-  addressCell = row.insertCell();
-    
-  nameCell.textContent = company.name;
-  ratingCell.textContent = company.rating;
-  websiteCell.innerHTML = `<a href="#">${company.website}</a>`;
-  phoneCell.textContent = company.phone;
-  addressCell.textContent = company.address;
-}
+if(window.location.pathname === "/fresh.html") {
 
-if(window.location.pathname == "/directory.html" || window.location.pathname == "/wdd230/chamber/directory.html") {
+  const main = document.querySelector('.fresh');
+
   fetch(requestURL)
-  .then(function (response) {
-    return response.json();
-  })
-  .then(function (jsonObject) {
-    //console.table(jsonObject);  // temporary checking for valid response and data parsing
-    const companies = jsonObject['companies'];
-    companies.forEach(displayCompanies);
-    companies.forEach(listCompanies);
-  });
-// Display the directory either in cards or a list
-function displayCards() {
-  document.querySelector('.cards').style.display = 'grid';
-  document.querySelector('.companyList').style.display = 'none';
-}
-function displayList() {
-  document.querySelector('.cards').style.display = 'none';
-  document.querySelector('.companyList').style.display = 'flex';
-}
-}
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (jsonObject) { 
+      createOptions(jsonObject);
+    });
 
-// Display three gold level companies in index.html spotlights
-const spotlightImgs = document.querySelectorAll('img.spotlightImg');
-const spotlightHeaders = document.querySelectorAll('h2.spotlightHeader');
-
-function advertiseCompanies(company, header, image) {
-  header.innerHTML = `Featured: ${company.name}`;
-  image.setAttribute('src', company.imageurl);
-  image.setAttribute('alt', `Photo of ${company.name}`);
-  image.setAttribute('loading', 'lazy');
-}
-if(window.location.pathname == "/index.html" || window.location.pathname == "/wdd230/chamber/index.html" || window.location.pathname == "/wdd230/chamber/") {
-fetch(requestURL)
-  .then(function (response) {
-    return response.json();
-  })
-  .then(function (jsonObject) {
-    //console.table(jsonObject);  // temporary checking for valid response and data parsing
-    const companies = jsonObject['companies'];
-    let i = 0;
-    for(let j = 0; j < companies.length; j++) {
-      if(companies[j].membershipLevel == "gold" && i < 3) {
-        advertiseCompanies(companies[j], spotlightHeaders[i], spotlightImgs[i]);
-        i++;
-      }
+    function createOptions(fruits){
+      fruitSelectors.forEach(fruitSelector => {
+        fruits.forEach(element => {
+          let option = document.createElement('option');
+          let optionValue = `{"name":"${element.name}","nutritions":${JSON.stringify(element.nutritions)}}`;
+          option.setAttribute('value', optionValue);
+          option.innerText = element.name;
+          fruitSelector.appendChild(option);
+        });
+      });
     }
-  });
-}
+
+    function confirmOrder() {
+      if (isLocalStorageSupported){
+        if(doesVariableExist('test')){
+          localStorage.test = Number(localStorage.test) + 1;
+        }else{
+          localStorage.test = 1;
+        }
+        //console.log(localStorage.test);
+      }
+      //localStorage.clear()
+      if (typeof Storage !== "undefined") {
+        //Local storage is supported
+        if (localStorage.drinkCount) {
+          localStorage.drinkCount = Number(localStorage.drinkCount) + 1;
+          console.log(localStorage.drinkCount); 
+        } else {
+          localStorage.drinkCount = 1;
+        }
+      } else {
+        // their browser doesn't support local storage so let them know or just do nothing
+        alert("Sorry, your browser does not support web storage.  Drink count will not be saved");
+      }
+      document.location.reload();
+    }
+
+    function cancelOrder() {
+      let outputArea =  document.querySelector('#outputArea');
+      if (typeof(outputArea) != 'undefined' && outputArea != null) {
+        main.removeChild(main.lastChild);
+      } else {
+        alert('Error: no order exists');
+      }
+
+      formInputs.forEach(input => {
+        input.disabled = false;
+      });
+      fruitSelectors.forEach(fruitSelector => {
+        fruitSelector.disabled = false;
+      });
+      formTextarea.disabled = false;
+      
+
+      }
+
+    function displayOutput() {
+      formInputs.forEach(input => {
+        input.disabled = true;
+      });
+      fruitSelectors.forEach(fruitSelector => {
+        fruitSelector.disabled = true;
+      });
+      formTextarea.disabled = true;
+      
+      let fruit1Obj = JSON.parse(document.querySelector('#fruit1').value);
+      let fruit2Obj = JSON.parse(document.querySelector('#fruit2').value);
+      let fruit3Obj = JSON.parse(document.querySelector('#fruit3').value);
+
+      let totalCarbs = fruit1Obj.nutritions.carbohydrates + fruit2Obj.nutritions.carbohydrates + fruit3Obj.nutritions.carbohydrates;
+      let totalProtein = fruit1Obj.nutritions.protein + fruit2Obj.nutritions.protein + fruit3Obj.nutritions.protein;
+      let totalFat = fruit1Obj.nutritions.fat + fruit2Obj.nutritions.fat + fruit3Obj.nutritions.fat;
+      let totalSugar = fruit1Obj.nutritions.sugar + fruit2Obj.nutritions.sugar + fruit3Obj.nutritions.sugar;
+      let totalCalories = fruit1Obj.nutritions.calories + fruit2Obj.nutritions.calories + fruit3Obj.nutritions.calories;
+      
+      let outputArea = document.createElement('div');
+      outputArea.setAttribute('id', 'outputArea');
+
+      let outputAreaHeader = document.createElement('h3');
+      outputAreaHeader.setAttribute('id', 'outputAreaHeader');
+      outputAreaHeader.innerText = 'Order Summary';
+      outputArea.appendChild(outputAreaHeader);
+
+      let fname = document.createElement('p');
+      fname.setAttribute('id', 'outputFname');
+      fname.innerHTML = `<b>Name:</b> ${document.querySelector('#fname').value}`; 
+      outputArea.appendChild(fname);
+      
+      let email = document.createElement('p');
+      email.setAttribute('id', 'outputEmail');
+      email.innerHTML = `<b>Email:</b> ${document.querySelector('#email').value}`;
+      outputArea.appendChild(email);
+
+      let phone = document.createElement('p');
+      phone.setAttribute('id', 'outputPhone');
+      phone.innerHTML = `<b>Phone:</b> ${document.querySelector('#phone').value}`;
+      outputArea.appendChild(phone); 
+
+      let instructions = document.createElement('p');
+      instructions.setAttribute('id', 'outputInstructions');
+      instructions.innerHTML = `<b>Special Instructions:</b> ${document.querySelector('#instructions').value}`;
+      outputArea.appendChild(instructions); 
+
+      let orderDate = document.createElement('p');
+      orderDate.setAttribute('id', 'orderDate');
+      let now = new Date();
+      let fulldateUK = new Intl.DateTimeFormat("en-UK", {
+	      dateStyle: "short"
+      }).format(now);
+      orderDate.innerHTML = `<b>Order Date:</b> ${fulldateUK}`;
+      outputArea.appendChild(orderDate); 
+
+      let fruit1 = document.createElement('p');
+      fruit1.setAttribute('id', 'outputFruit1');
+      fruit1.innerHTML = `<b>Fruit 1:</b> ${fruit1Obj.name}`;
+      outputArea.appendChild(fruit1);
+
+      let fruit2 = document.createElement('p');
+      fruit2.setAttribute('id', 'outputFruit2');
+      fruit2.innerHTML = `<b>Fruit 2:</b> ${fruit2Obj.name}`;
+      outputArea.appendChild(fruit2);
+
+      let fruit3 = document.createElement('p');
+      fruit3.setAttribute('id', 'outputFruit3');
+      fruit3.innerHTML = `<b>Fruit 3:</b> ${fruit3Obj.name}`;
+      outputArea.appendChild(fruit3);
+
+      let carbs = document.createElement('p');
+      carbs.setAttribute('id', 'carbs');
+      carbs.innerHTML = `<b>Total Carbohydrates:</b> ${totalCarbs.toFixed(1)}`;
+      outputArea.appendChild(carbs);
+
+      let protein = document.createElement('p');
+      protein.setAttribute('id', 'protein');
+      protein.innerHTML = `<b>Total Protein:</b> ${totalProtein.toFixed(1)}`;
+      outputArea.appendChild(protein);
+
+      let fat = document.createElement('p');
+      fat.setAttribute('id', 'fat');
+      fat.innerHTML = `<b>Total Fat:</b> ${totalFat.toFixed(1)}`;
+      outputArea.appendChild(fat);
+
+      let sugar = document.createElement('p');
+      sugar.setAttribute('id', 'sugar');
+      sugar.innerHTML = `<b>Total Sugar:</b> ${totalSugar.toFixed(1)}`;
+      outputArea.appendChild(sugar);
+
+      let calories = document.createElement('p');
+      calories.setAttribute('id', 'calories');
+      calories.innerHTML = `<b>Total Calories:</b> ${totalCalories.toFixed(0)}`;
+      outputArea.appendChild(calories);
+
+      let confirmButton = document.createElement('button');
+      confirmButton.setAttribute('id', 'confirmButton');
+      confirmButton.setAttribute('onclick', "confirmOrder()");
+      confirmButton.innerText = 'Confirm'; 
+      outputArea.appendChild(confirmButton);
+
+      let cancelButton = document.createElement('button');
+      cancelButton.setAttribute('id', 'cancelButton');
+      cancelButton.setAttribute('onclick', "cancelOrder()");
+      cancelButton.innerText = 'Cancel'; 
+      outputArea.appendChild(cancelButton);
+
+      main.appendChild(outputArea);
+
+    }
+
+  }
+  
