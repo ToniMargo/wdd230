@@ -73,7 +73,7 @@ function createStorageVariable(x, value){
 }
 
 // Index.html
-if(window.location.pathname === "/index.html" || window.location.pathname === "/") {
+if(window.location.pathname === "/index.html" || window.location.pathname === "/" || window.location.pathname === "wdd230/bountiful-foods/index.html" || window.location.pathname === "wdd230/bountiful-foods/") {
   if (isLocalStorageSupported){
     if(doesVariableExist('test')){
       localStorage.test = Number(localStorage.test) + 1;
@@ -97,12 +97,12 @@ if(window.location.pathname === "/index.html" || window.location.pathname === "/
   
 // Fresh.html:
 
-const requestURL = 'json/fruit.json';
+const requestURL = 'fruit.json';
 const fruitSelectors = document.querySelectorAll('.fruit');
 const formInputs = document.querySelectorAll('input');
 const formTextarea = document.querySelector('textarea');
 
-if(window.location.pathname === "/fresh.html") {
+if(window.location.pathname === "/fresh.html" || window.location.pathname === "wdd230/bountiful-foods/fresh.html") {
 
   const main = document.querySelector('.fresh');
 
