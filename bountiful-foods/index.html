@@ -45,38 +45,51 @@
         </nav>
     </header>
 
-
-    
-
     <!--CONTENT HERE-->
     <main class="home">
 
       <div class="card" id="CTA">
         <picture>
-          <img loading="lazy" data-src="images/home/CTA.jpg" src="images/home/CTABlur.jpg" alt="">
+          <img loading="lazy" data-src="images/home/CTA.jpg" src="images/home/CTABlur.jpg" alt="fresh strawberry drink">
         </picture>
-        <h2>CTA</h2>
+        <div id="CTAbox">
+          <h1>Mix it up!</h1>
+          <p>Prepare your drinks full of our fresh and natural flavor.</p>
+          <button onclick="location.href='fresh.html';" value="Prepare your drink">Mix it!</button>
+        </div>
       </div>
 
       <div class="card" id="summary">
         <picture>
-          <img loading="lazy" data-src="images/home/summary.jpg" src="images/home/summaryBlur.jpg" alt="">
+          <img loading="lazy" data-src="images/home/summary.jpg" src="images/home/summaryBlur.jpg" alt="sunset on beach">
         </picture>
-        <h2>Summary</h2>
+        <p>The average temperature in Carlsbad this time of the year is typically between 65 and 75 degrees Fahrenheit (18-24 degrees Celsius).</p>
       </div>
 
       <div class="card" id="drinks">
         <picture>
-          <img loading="lazy" data-src="images/home/drinks.jpg" src="images/home/drinksBlur.jpg" alt="">
+          <img loading="lazy" data-src="images/home/drinks.jpg" src="images/home/drinksBlur.jpg" alt="blueberry smoothies">
         </picture>
-        <h2>Drink info</h2>
+        <p>You have prepared<span id="drinkCounter">-</span> drinks in total.</p>
       </div>
 
       <div class="card" id="weather">
         <picture>
-          <img loading="lazy" data-src="images/home/weather.jpg" src="images/home/weatherBlur.jpg" alt="">
+          <img loading="lazy" data-src="images/home/weather.jpg" src="images/home/weatherBlur.jpg" alt="palm trees">
         </picture>
         <h2>Weather</h2>
+        <h6 id="temperature">-</h6>
+        <p id="condition">-</p>
+        <p id="humidity">-</p>
+        <div id="threeDayForecast">
+          <p id="day1">-</p>
+          <p id="day2">-</p>
+          <p id="day3">-</p>
+          <p id="temp1">-</p>
+          <p id="temp2">-</p>
+          <p id="temp3">-</p>
+        </div>
+
       </div>
 
     </main>

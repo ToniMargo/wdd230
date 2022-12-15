@@ -43,14 +43,41 @@
                 <li><a href="about-us.html">About Us</a></li>
                 </ul>
         </nav>
-    </header>
-
-
+    </header>  
     
-
     <!--CONTENT HERE-->
     <main class="fresh">
-        <h1>Fresh</h1>
+      <picture>
+        <img loading="lazy" data-src="images/fresh/fresh.jpg" src="images/fresh/freshBlur.jpg" alt="fruits">
+      </picture>
+        <form method="get" action="javascript:displayOutput()">
+      
+          <h1>Prepare your fresh drink here!</h1>
+
+          <label for="fname">Name:</label>
+          <input type="text" id="fname" name="fname" required>
+
+          <label for="email">Email:</label>
+          <input type="text" id="email" name="email" placeholder="me@mymail.com" required>
+
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" pattern="\([0-9]{3}\) [0-9]{3}[ -][0-9]{4}" title="A valid telephone number consist of a 3 digits code area between parentheses, a space, the three first digits of the number, a space or hypen (-), and four more digits." placeholder="(555) 123-1234" required>
+
+          <label for="fruit1">Fruit 1:</label>
+          <select name="fruit1" class="fruit" id="fruit1"></select>
+
+          <label for="fruit2">Fruit 2:</label>
+          <select name="fruit2" class="fruit" id="fruit2"></select>
+          
+          <label for="fruit3">Fruit 3:</label>
+          <select name="fruit3" class="fruit" id="fruit3"></select>
+
+          <label for="instructions">Special instructions: </label>
+          <textarea name="instructions" id="instructions" cols="15" rows="7"></textarea>
+
+          <input type="submit" value="Prepare drink" id="submitButton">
+
+        </form>
 
       
 
@@ -72,7 +99,6 @@
         <p id="foot">&copy; <span id="date1"></span> Bountiful Foods | Antonio Martinez | WDD 230 Project | <span id="lastmod"></span></p>
           
     </footer>
-    <script src="scripts/weather.js"></script>
     <script src="scripts/scripts.js"></script>
 </body>
 </html>
