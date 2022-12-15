@@ -74,9 +74,9 @@ function displayForecast(forecastData) {
   // GET NUMBER OF DAY
   const weekday = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
   const d = new Date();
-  const weekday1 = weekday[d.getDay() + 1];
-  const weekday2 = weekday[d.getDay() + 2];
-  const weekday3 = weekday[d.getDay() + 3];
+  const weekday1 = weekday[Math.abs((d.getDay() + 1) % 7)];
+  const weekday2 = weekday[Math.abs((d.getDay() + 2) % 7)];
+  const weekday3 = weekday[Math.abs((d.getDay() + 3) % 7)];
   
   day1.textContent = weekday1;
   temp1.innerHTML = `${day1minTemp}°/${day1maxTemp}°`;
