@@ -73,7 +73,7 @@ function createStorageVariable(x, value){
 }
 
 // Index.html
-if(window.location.pathname === "/index.html" || window.location.pathname === "/" || window.location.pathname === "wdd230/bountiful-foods/index.html" || window.location.pathname === "wdd230/bountiful-foods/") {
+if(window.location.pathname == "/index.html" || window.location.pathname === "/" || window.location.pathname == "/wdd230/bountiful-foods/index.html" || window.location.pathname === "/wdd230/bountiful-foods/") {
   if (isLocalStorageSupported){
     if(doesVariableExist('test')){
       localStorage.test = Number(localStorage.test) + 1;
@@ -103,7 +103,16 @@ const formInputs = document.querySelectorAll('input');
 const formTextarea = document.querySelector('textarea');
 const main = document.querySelector('.fresh');
 
+if(window.location.pathname == "/fresh.html" || window.location.pathname == "/wdd230/bountiful-foods/fresh.html") {
 
+  fetch(requestURL)
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (jsonObject) { 
+      createOptions(jsonObject);
+    });
+}
 
 function createOptions(fruits){
   fruitSelectors.forEach(fruitSelector => {
@@ -272,14 +281,5 @@ function displayOutput() {
   main.appendChild(outputArea);
 
 }
-if(window.location.pathname === "/fresh.html" || window.location.pathname === "wdd230/bountiful-foods/fresh.html") {
 
-  fetch(requestURL)
-    .then(function (response) {
-      return response.json();
-    })
-    .then(function (jsonObject) { 
-      createOptions(jsonObject);
-    });
-  }
   
